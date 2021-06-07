@@ -699,6 +699,11 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
                 std::vector<AIStrokeStyle> charFeatureStrokeArray;
                 std::vector<int> charStrokeStyleBool;
                 
+                std::vector<AIStrokeStyle> textFrameObjectStrokeStyleArray;
+                std::vector<int> textFrameStrokeVisibleBool;
+                std::vector<AIFillStyle> textFrameObjectFillStyleArray;
+                std::vector<int> textFrameFillVisibleBool;
+                
                 std::vector<ai::UnicodeString> charfontStyleNameArray, charfontFamilyNameArray;
                 std::vector<double> charFontSizeArray, charHScaleSizeArray;
                 artHandle = linkArtHanldes.at(i);
@@ -710,6 +715,12 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
 
                 if(artHandle != NULL && lockType == "pclock")
                 {
+                    jjLock->GetTextFrameFillAndStrokeColour(&textFrameObjectStrokeStyleArray, &textFrameStrokeVisibleBool, &textFrameObjectFillStyleArray,&textFrameFillVisibleBool, artHandle);
+                    jjLock->SetArrayEntryForInteger(artHandle, "textFrameFillStyleBool", textFrameFillVisibleBool);
+                    jjLock->SetArrayEntryForFillStyle(artHandle, "textFrameFillStyle", textFrameObjectFillStyleArray);
+                    jjLock->SetArrayEntryForInteger(artHandle, "textFrameStrokeStyleBool", textFrameStrokeVisibleBool);
+                    jjLock->SetArrayEntryForStrokeStyle(artHandle, "textFrameStrokeStyle", textFrameObjectStrokeStyleArray);
+                    
                     jjLock->GetCharacterColor(&charFeatureColorArray, &charColorFillBool, artHandle);
                     jjLock->SetArrayEntryForInteger(artHandle, "charFillStyleBool", charColorFillBool);
                     jjLock->SetArrayEntryForFillStyle(artHandle, "charFillStyle", charFeatureColorArray);

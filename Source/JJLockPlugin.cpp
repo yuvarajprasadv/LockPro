@@ -2144,8 +2144,13 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
             result = sAIArt->GetArtType(artHandle, &type);
             ai::check_ai_error(result);
         
-        if(jjLock.GetBooleanEntryFromHandleDict(artHandle, "lock") &&  jjLock.GetBooleanEntryFromHandleDict(artHandle, "pclock") && type == kTextFrameArt)
+
+            ai::UnicodeString artLockType;
+            result = jjLock.GetUnicodeEntryFromDocumentDict(artHandle, &artLockType, "groupChildLockType");
+            if( ((jjLock.GetBooleanEntryFromHandleDict(artHandle, "lock")  &&  jjLock.GetBooleanEntryFromHandleDict(artHandle, "pclock")) || (jjLock.GetBooleanEntryFromHandleDict(artHandle, "groupChildLockBool") && artLockType == ai::UnicodeString("pclock"))) && type == kTextFrameArt)
         {
+            
+            
             std::vector<AIArtHandle> linkArtHanldes;
             
             if(artHandle != NULL)
@@ -2424,8 +2429,15 @@ bool JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHand
                         
                         if(!IsDictAndCurrentOwnRectBoundSame(textFrameArtHandle))
                         {
-                         result = sAIDocument->Undo();
-                                aisdk::check_ai_error(result);
+                            result = sAIDocument->Undo();
+                            aisdk::check_ai_error(result);
+                            isBreak = true;
+                            break;
+                        }
+                        else if(lockType == "pclock" && !IsDictAndCurrentOwnRectBoundLengthSame(textFrameArtHandle))
+                        {
+                            result = sAIDocument->Undo();
+                            aisdk::check_ai_error(result);
                             isBreak = true;
                             break;
                         }
