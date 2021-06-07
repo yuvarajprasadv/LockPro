@@ -402,6 +402,20 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                         }
                     }
                 }
+                if(jjLock.GetUnicodeStringEntryFromHandleDict(selectedArtHandle, "GParentID") != ai::UnicodeString(""))
+                {
+                    AIArtHandle parentHandle;
+                    sAIArt->GetArtParent(selectedArtHandle, &parentHandle);
+                    if(parentHandle != NULL)
+                    {
+                        if(jjLock.GetUnicodeStringEntryFromHandleDict(selectedArtHandle, "GParentID") != jjLock.GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID"))
+                        {
+                            result = sAIDocument->Undo();
+                            aisdk::check_ai_error(result);
+                            break;
+                        }
+                    }
+                }
                 
             }
         }

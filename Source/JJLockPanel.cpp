@@ -578,6 +578,40 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
         {
             *totalChildCount += 1;
             qDebug() << "INT " << totalChildCount << " " << *totalChildCount ;
+            
+            AIArtHandle parentHandle;
+            ai::UnicodeString gLockGID;
+            sAIArt->GetArtParent(groupArtHandle, &parentHandle);
+            ASBoolean isLayerGroup;
+            sAIArt->IsArtLayerGroup(parentHandle, &isLayerGroup);
+       //     if(parentHandle!= NULL && !isLayerGroup)
+            {
+              //
+//                qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(lastChildHandle, "GGroupID").as_UTF8().c_str();
+//                if(jjLock->GetUnicodeStringEntryFromHandleDict(lastChildHandle, "GGroupID") == ai::UnicodeString(""))
+                if(jjLock->GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID") != ai::UnicodeString(""))
+                {
+                    qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID").as_UTF8().c_str();
+                    jjLock->SetUnicodeStringEntryToHandleDict(groupArtHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID"));
+                    
+                    gLockGID = JJLockPanel::CreateUUID();
+                    jjLock->SetUnicodeStringEntryToHandleDict(groupArtHandle, "GGroupID", gLockGID);
+                    qDebug() << "sd "<<jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+                }
+                else
+                {
+                    gLockGID = JJLockPanel::CreateUUID();
+                    jjLock->SetUnicodeStringEntryToHandleDict(groupArtHandle, "GGroupID", gLockGID);
+                    qDebug() << "sd "<<jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+                }
+                
+                
+                
+//                if(parentHandle!=NULL)
+//                    jjLock->SetUnicodeStringEntryToHandleDict(parentHandle, "GGroupID", gLockGID);
+//                jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", gLockGID);
+            }
+            
         }
     }
     else
@@ -587,7 +621,6 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
     }
     while(lastChildHandle != NULL)
     {
-        ai::UnicodeString gLockGID;
         short childArtType;
         sAIArt->GetArtType(lastChildHandle, &childArtType);
         
@@ -596,21 +629,6 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
             if(sAIArt->HasDictionary(lastChildHandle) && !(sAIArt->IsDictionaryEmpty(lastChildHandle)))
             {
                 jjLock->DeleteDictionaryUsingIteratorCheck(lastChildHandle, keyStringListToClear);
-            }
-            
-            
-            
-            
-            AIArtHandle parentHandle;
-            sAIArt->GetArtParent(lastChildHandle, &parentHandle);
-            ASBoolean isLayerGroup;
-            sAIArt->IsArtLayerGroup(parentHandle, &isLayerGroup);
-            if(parentHandle!= NULL && !isLayerGroup)
-            {
-                gLockGID = JJLockPanel::CreateUUID();
-                if(parentHandle)
-                jjLock->SetUnicodeStringEntryToHandleDict(parentHandle, "GroupID", gLockGID);
-                jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "ParentID", gLockGID);
             }
             
             jjLock->SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
@@ -627,6 +645,12 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
             jjLock->SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
             jjLock->SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString(lockType), "groupChildLockType");
             *totalChildCount += 1;
+            
+            qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+            if(jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+            {
+                jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+            }
             
             if(lockType == "pclock")
                 ParseCompoundPathForLock(lastChildHandle, "pclock");
@@ -662,6 +686,13 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
                 jjLock->SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                 jjLock->SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString(lockType), "groupChildLockType");
                 *totalChildCount += 1;
+                
+                qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+                if(jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+                {
+                    jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+                }
+                
                 std::vector<AIFillStyle> charFeatureColorArray;
                 std::vector<int> charColorFillBool;
                 
@@ -755,6 +786,13 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
             jjLock->SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
             jjLock->SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString(lockType), "groupChildLockType");
             *totalChildCount += 1;
+            
+            qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+            if(jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+            {
+                jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+            }
+            
             AIArtHandle nextChildArt = lastChildHandle;
             if(lockType == "pclock")
             {
