@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19463F9D1E012AF0001929C1 /* JJLockID.h in Headers */ = {isa = PBXBuildFile; fileRef = 19463F981E012AF0001929C1 /* JJLockID.h */; };
+		19463F9E1E012AF0001929C1 /* JJLockPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19463F991E012AF0001929C1 /* JJLockPlugin.cpp */; };
+		19463F9F1E012AF0001929C1 /* JJLockPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 19463F9A1E012AF0001929C1 /* JJLockPlugin.h */; };
+		19463FA01E012AF0001929C1 /* JJLockSuites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19463F9B1E012AF0001929C1 /* JJLockSuites.cpp */; };
+		19463FA11E012AF0001929C1 /* JJLockSuites.h in Headers */ = {isa = PBXBuildFile; fileRef = 19463F9C1E012AF0001929C1 /* JJLockSuites.h */; };
+		19463FA31E012B05001929C1 /* LockPro.r in Rez */ = {isa = PBXBuildFile; fileRef = 19463FA21E012B05001929C1 /* LockPro.r */; };
+		19463FA71E013063001929C1 /* SDKAboutPluginsHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19463FA61E013063001929C1 /* SDKAboutPluginsHelper.cpp */; };
+		19463FA91E013E4B001929C1 /* SDKErrors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19463FA81E013E4B001929C1 /* SDKErrors.cpp */; };
+		19463FB21E03907E001929C1 /* IText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19463FB01E03907E001929C1 /* IText.cpp */; };
+		19463FB31E03907E001929C1 /* IThrowException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19463FB11E03907E001929C1 /* IThrowException.cpp */; };
+		1979A5E31E27734F006D6B4B /* JJLockPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1979A5E11E27734F006D6B4B /* JJLockPanel.cpp */; };
+		1979A5E41E27734F006D6B4B /* JJLockPanel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1979A5E21E27734F006D6B4B /* JJLockPanel.hpp */; };
+		2A9235D20E2FB5D2001EA6E3 /* AppContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A9235CC0E2FB5D2001EA6E3 /* AppContext.cpp */; };
+		2A9235D30E2FB5D2001EA6E3 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A9235CD0E2FB5D2001EA6E3 /* Main.cpp */; };
+		2A9235D40E2FB5D2001EA6E3 /* Plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A9235CE0E2FB5D2001EA6E3 /* Plugin.cpp */; };
+		2A9235D70E2FB5D2001EA6E3 /* Suites.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A9235D10E2FB5D2001EA6E3 /* Suites.cpp */; };
+		2A9235DD0E2FB5EC001EA6E3 /* IAIUnicodeString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A9235DA0E2FB5EC001EA6E3 /* IAIUnicodeString.cpp */; };
+		2AE03E3E0CF6F76A00C6B585 /* IllustratorSDK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AE03E3D0CF6F76A00C6B585 /* IllustratorSDK.cpp */; };
+		9D3E04BE23DB334F0048C050 /* QtNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3E04BD23DB334F0048C050 /* QtNetwork.framework */; };
+		9D50F054262478BF00E4A31D /* SelectionHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D50F050262478BE00E4A31D /* SelectionHelper.cpp */; };
+		9D50F055262478BF00E4A31D /* DocumentHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D50F051262478BE00E4A31D /* DocumentHelper.cpp */; };
+		9D50F056262478BF00E4A31D /* SelectionHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D50F052262478BE00E4A31D /* SelectionHelper.h */; };
+		9D50F057262478BF00E4A31D /* DocumentHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D50F053262478BE00E4A31D /* DocumentHelper.h */; };
+		9D5B54432665037300822303 /* libJJLockUI.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5B54422665037300822303 /* libJJLockUI.dylib */; };
+		9D6895F522F1AA4E00BB4313 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6895F422F1AA4E00BB4313 /* Cocoa.framework */; };
+		9D6895F722F1AA5300BB4313 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6895F622F1AA5300BB4313 /* Carbon.framework */; };
+		9D6895F922F1AA5A00BB4313 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6895F822F1AA5A00BB4313 /* Quartz.framework */; };
+		9D6895FF22F1AA8900BB4313 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6895FC22F1AA8800BB4313 /* QtCore.framework */; };
+		9D68960022F1AA8900BB4313 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6895FD22F1AA8800BB4313 /* QtGui.framework */; };
+		9D68960122F1AA8900BB4313 /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6895FE22F1AA8800BB4313 /* QtWidgets.framework */; };
+		9DAD4A3C220AE4680051A33A /* JJLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DAD4A3A220AE4680051A33A /* JJLock.cpp */; };
+		9DAD4A3D220AE4680051A33A /* JJLock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9DAD4A3B220AE4680051A33A /* JJLock.hpp */; };
+		9DAD4A4F220C089B0051A33A /* plock.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DAD4A4C220C089B0051A33A /* plock.png */; settings = {ASSET_TAGS = (Image, ); }; };
+		9DAD4A50220C089B0051A33A /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DAD4A4D220C089B0051A33A /* clock.png */; settings = {ASSET_TAGS = (Image, ); }; };
+		9DAD4A51220C089B0051A33A /* pclock.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DAD4A4E220C089B0051A33A /* pclock.png */; settings = {ASSET_TAGS = (Image, ); }; };
+		9DF531912209C4FA0097A9BA /* ArtSetHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5318F2209C4FA0097A9BA /* ArtSetHelper.cpp */; };
+		9DF531922209C4FA0097A9BA /* ArtSetHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF531902209C4FA0097A9BA /* ArtSetHelper.h */; };
+		9E9C47181423A25E004EA572 /* SDKPlugPlug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C47161423A25E004EA572 /* SDKPlugPlug.cpp */; };
+		9E9C475A1423AD0C004EA572 /* IAIFilePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C47591423AD0C004EA572 /* IAIFilePath.cpp */; };
+		E80C4D2A1EBB21E40091ED13 /* Tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E80C4D281EBB21E40091ED13 /* Tool.cpp */; };
+		E80C4D2B1EBB21E40091ED13 /* Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = E80C4D291EBB21E40091ED13 /* Tool.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19463F981E012AF0001929C1 /* JJLockID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJLockID.h; path = Source/JJLockID.h; sourceTree = "<group>"; };
+		19463F991E012AF0001929C1 /* JJLockPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JJLockPlugin.cpp; path = Source/JJLockPlugin.cpp; sourceTree = "<group>"; };
+		19463F9A1E012AF0001929C1 /* JJLockPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJLockPlugin.h; path = Source/JJLockPlugin.h; sourceTree = "<group>"; };
+		19463F9B1E012AF0001929C1 /* JJLockSuites.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JJLockSuites.cpp; path = Source/JJLockSuites.cpp; sourceTree = "<group>"; };
+		19463F9C1E012AF0001929C1 /* JJLockSuites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JJLockSuites.h; path = Source/JJLockSuites.h; sourceTree = "<group>"; };
+		19463FA21E012B05001929C1 /* LockPro.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; name = LockPro.r; path = Resources/LockPro.r; sourceTree = "<group>"; };
+		19463FA61E013063001929C1 /* SDKAboutPluginsHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDKAboutPluginsHelper.cpp; path = ../common/source/SDKAboutPluginsHelper.cpp; sourceTree = "<group>"; };
+		19463FA81E013E4B001929C1 /* SDKErrors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDKErrors.cpp; path = ../common/source/SDKErrors.cpp; sourceTree = "<group>"; };
+		19463FB01E03907E001929C1 /* IText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IText.cpp; path = ../../illustratorapi/ate/IText.cpp; sourceTree = "<group>"; };
+		19463FB11E03907E001929C1 /* IThrowException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IThrowException.cpp; path = ../../illustratorapi/ate/IThrowException.cpp; sourceTree = "<group>"; };
+		1979A5E11E27734F006D6B4B /* JJLockPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JJLockPanel.cpp; path = Source/JJLockPanel.cpp; sourceTree = "<group>"; };
+		1979A5E21E27734F006D6B4B /* JJLockPanel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = JJLockPanel.hpp; path = Source/JJLockPanel.hpp; sourceTree = "<group>"; };
+		2A9235CC0E2FB5D2001EA6E3 /* AppContext.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = AppContext.cpp; path = ../common/source/AppContext.cpp; sourceTree = SOURCE_ROOT; };
+		2A9235CD0E2FB5D2001EA6E3 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = ../common/source/Main.cpp; sourceTree = SOURCE_ROOT; };
+		2A9235CE0E2FB5D2001EA6E3 /* Plugin.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Plugin.cpp; path = ../common/source/Plugin.cpp; sourceTree = SOURCE_ROOT; };
+		2A9235D10E2FB5D2001EA6E3 /* Suites.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = Suites.cpp; path = ../common/source/Suites.cpp; sourceTree = SOURCE_ROOT; };
+		2A9235DA0E2FB5EC001EA6E3 /* IAIUnicodeString.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = IAIUnicodeString.cpp; path = ../../illustratorapi/illustrator/IAIUnicodeString.cpp; sourceTree = SOURCE_ROOT; };
+		2AE03E3D0CF6F76A00C6B585 /* IllustratorSDK.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = IllustratorSDK.cpp; path = ../common/source/IllustratorSDK.cpp; sourceTree = SOURCE_ROOT; };
+		6EE2BA530A40BB2600CC7CE2 /* LockPro.aip */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockPro.aip; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3E04BD23DB334F0048C050 /* QtNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetwork.framework; path = ../../../../../Applications/Qt/5.6/clang_64/lib/QtNetwork.framework; sourceTree = "<group>"; };
+		9D50F050262478BE00E4A31D /* SelectionHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SelectionHelper.cpp; path = Source/SelectionHelper.cpp; sourceTree = "<group>"; };
+		9D50F051262478BE00E4A31D /* DocumentHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DocumentHelper.cpp; path = Source/DocumentHelper.cpp; sourceTree = "<group>"; };
+		9D50F052262478BE00E4A31D /* SelectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionHelper.h; path = Source/SelectionHelper.h; sourceTree = "<group>"; };
+		9D50F053262478BE00E4A31D /* DocumentHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DocumentHelper.h; path = Source/DocumentHelper.h; sourceTree = "<group>"; };
+		9D5B54422665037300822303 /* libJJLockUI.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libJJLockUI.dylib; path = ../../../Qt/build_JJLockUI_3.2/debug/libJJLockUI.dylib; sourceTree = "<group>"; };
+		9D6895F422F1AA4E00BB4313 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		9D6895F622F1AA5300BB4313 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		9D6895F822F1AA5A00BB4313 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
+		9D6895FC22F1AA8800BB4313 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../../../Applications/Qt/5.6/clang_64/lib/QtCore.framework; sourceTree = "<group>"; };
+		9D6895FD22F1AA8800BB4313 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../../../Applications/Qt/5.6/clang_64/lib/QtGui.framework; sourceTree = "<group>"; };
+		9D6895FE22F1AA8800BB4313 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = ../../../../../Applications/Qt/5.6/clang_64/lib/QtWidgets.framework; sourceTree = "<group>"; };
+		9DAD4A3A220AE4680051A33A /* JJLock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JJLock.cpp; path = Source/JJLock.cpp; sourceTree = "<group>"; };
+		9DAD4A3B220AE4680051A33A /* JJLock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = JJLock.hpp; path = Source/JJLock.hpp; sourceTree = "<group>"; };
+		9DAD4A4C220C089B0051A33A /* plock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plock.png; sourceTree = "<group>"; };
+		9DAD4A4D220C089B0051A33A /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		9DAD4A4E220C089B0051A33A /* pclock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pclock.png; sourceTree = "<group>"; };
+		9DF5318F2209C4FA0097A9BA /* ArtSetHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArtSetHelper.cpp; path = Source/ArtSetHelper.cpp; sourceTree = "<group>"; };
+		9DF531902209C4FA0097A9BA /* ArtSetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtSetHelper.h; path = Source/ArtSetHelper.h; sourceTree = "<group>"; };
+		9E9C47161423A25E004EA572 /* SDKPlugPlug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SDKPlugPlug.cpp; path = ../common/source/SDKPlugPlug.cpp; sourceTree = SOURCE_ROOT; };
+		9E9C47591423AD0C004EA572 /* IAIFilePath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IAIFilePath.cpp; path = ../../illustratorapi/illustrator/IAIFilePath.cpp; sourceTree = SOURCE_ROOT; };
+		E80C4D281EBB21E40091ED13 /* Tool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tool.cpp; path = Source/Tool.cpp; sourceTree = "<group>"; };
+		E80C4D291EBB21E40091ED13 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tool.h; path = Source/Tool.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		508817D209F0C9AD0071BF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6895FF22F1AA8900BB4313 /* QtCore.framework in Frameworks */,
+				9D68960022F1AA8900BB4313 /* QtGui.framework in Frameworks */,
+				9D68960122F1AA8900BB4313 /* QtWidgets.framework in Frameworks */,
+				9D6895F922F1AA5A00BB4313 /* Quartz.framework in Frameworks */,
+				9D6895F722F1AA5300BB4313 /* Carbon.framework in Frameworks */,
+				9D5B54432665037300822303 /* libJJLockUI.dylib in Frameworks */,
+				9D3E04BE23DB334F0048C050 /* QtNetwork.framework in Frameworks */,
+				9D6895F522F1AA4E00BB4313 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A7772AA0BE6387700A9D493 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2A9235CC0E2FB5D2001EA6E3 /* AppContext.cpp */,
+				9E9C47591423AD0C004EA572 /* IAIFilePath.cpp */,
+				2A9235DA0E2FB5EC001EA6E3 /* IAIUnicodeString.cpp */,
+				2AE03E3D0CF6F76A00C6B585 /* IllustratorSDK.cpp */,
+				19463FB01E03907E001929C1 /* IText.cpp */,
+				19463FB11E03907E001929C1 /* IThrowException.cpp */,
+				2A9235CD0E2FB5D2001EA6E3 /* Main.cpp */,
+				2A9235CE0E2FB5D2001EA6E3 /* Plugin.cpp */,
+				19463FA61E013063001929C1 /* SDKAboutPluginsHelper.cpp */,
+				19463FA81E013E4B001929C1 /* SDKErrors.cpp */,
+				9E9C47161423A25E004EA572 /* SDKPlugPlug.cpp */,
+				2A9235D10E2FB5D2001EA6E3 /* Suites.cpp */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		2AE97C910BBC0FAB0041212F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9D50F051262478BE00E4A31D /* DocumentHelper.cpp */,
+				9D50F053262478BE00E4A31D /* DocumentHelper.h */,
+				9D50F050262478BE00E4A31D /* SelectionHelper.cpp */,
+				9D50F052262478BE00E4A31D /* SelectionHelper.h */,
+				9DAD4A3A220AE4680051A33A /* JJLock.cpp */,
+				9DAD4A3B220AE4680051A33A /* JJLock.hpp */,
+				9DF5318F2209C4FA0097A9BA /* ArtSetHelper.cpp */,
+				9DF531902209C4FA0097A9BA /* ArtSetHelper.h */,
+				E80C4D281EBB21E40091ED13 /* Tool.cpp */,
+				E80C4D291EBB21E40091ED13 /* Tool.h */,
+				2A7772AA0BE6387700A9D493 /* Shared */,
+				19463F981E012AF0001929C1 /* JJLockID.h */,
+				19463F991E012AF0001929C1 /* JJLockPlugin.cpp */,
+				19463F9A1E012AF0001929C1 /* JJLockPlugin.h */,
+				1979A5E11E27734F006D6B4B /* JJLockPanel.cpp */,
+				1979A5E21E27734F006D6B4B /* JJLockPanel.hpp */,
+				19463F9C1E012AF0001929C1 /* JJLockSuites.h */,
+				19463F9B1E012AF0001929C1 /* JJLockSuites.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		508817C209F0C9740071BF1A = {
+			isa = PBXGroup;
+			children = (
+				9D5B54422665037300822303 /* libJJLockUI.dylib */,
+				C4A3F94D134C5A7F00128D2D /* Libraries */,
+				508817D509F0C9AD0071BF1A /* Products */,
+				6EE2BA590A40BDD300CC7CE2 /* Resources */,
+				2AE97C910BBC0FAB0041212F /* Sources */,
+				9DB6E90E2230F3A7008B53C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		508817D509F0C9AD0071BF1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EE2BA530A40BB2600CC7CE2 /* LockPro.aip */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EE2BA590A40BDD300CC7CE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DAD4A4B220C089B0051A33A /* Images */,
+				19463FA21E012B05001929C1 /* LockPro.r */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9DAD4A4B220C089B0051A33A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9DAD4A4C220C089B0051A33A /* plock.png */,
+				9DAD4A4D220C089B0051A33A /* clock.png */,
+				9DAD4A4E220C089B0051A33A /* pclock.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9DB6E90E2230F3A7008B53C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D3E04BD23DB334F0048C050 /* QtNetwork.framework */,
+				9D6895FC22F1AA8800BB4313 /* QtCore.framework */,
+				9D6895FD22F1AA8800BB4313 /* QtGui.framework */,
+				9D6895FE22F1AA8800BB4313 /* QtWidgets.framework */,
+				9D6895F822F1AA5A00BB4313 /* Quartz.framework */,
+				9D6895F622F1AA5300BB4313 /* Carbon.framework */,
+				9D6895F422F1AA4E00BB4313 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4A3F94D134C5A7F00128D2D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6EE2BA0A0A40B76300CC7CE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF531922209C4FA0097A9BA /* ArtSetHelper.h in Headers */,
+				1979A5E41E27734F006D6B4B /* JJLockPanel.hpp in Headers */,
+				19463F9F1E012AF0001929C1 /* JJLockPlugin.h in Headers */,
+				19463F9D1E012AF0001929C1 /* JJLockID.h in Headers */,
+				19463FA11E012AF0001929C1 /* JJLockSuites.h in Headers */,
+				9D50F056262478BF00E4A31D /* SelectionHelper.h in Headers */,
+				9D50F057262478BF00E4A31D /* DocumentHelper.h in Headers */,
+				9DAD4A3D220AE4680051A33A /* JJLock.hpp in Headers */,
+				E80C4D2B1EBB21E40091ED13 /* Tool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		508817D309F0C9AD0071BF1A /* LockPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508817D709F0C9AE0071BF1A /* Build configuration list for PBXNativeTarget "LockPro" */;
+			buildPhases = (
+				6EE2BA0A0A40B76300CC7CE2 /* Headers */,
+				508817D109F0C9AD0071BF1A /* Sources */,
+				508817D009F0C9AD0071BF1A /* Resources */,
+				508817D209F0C9AD0071BF1A /* Frameworks */,
+				6EE2BA0C0A40B77400CC7CE2 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockPro;
+			productName = Template;
+			productReference = 6EE2BA530A40BB2600CC7CE2 /* LockPro.aip */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		508817C409F0C9740071BF1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					Image,
+				);
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = 508817C509F0C9740071BF1A /* Build configuration list for PBXProject "LockPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 508817C209F0C9740071BF1A;
+			productRefGroup = 508817D509F0C9AD0071BF1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				508817D309F0C9AD0071BF1A /* LockPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		508817D009F0C9AD0071BF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DAD4A51220C089B0051A33A /* pclock.png in Resources */,
+				9DAD4A50220C089B0051A33A /* clock.png in Resources */,
+				9DAD4A4F220C089B0051A33A /* plock.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		6EE2BA0C0A40B77400CC7CE2 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19463FA31E012B05001929C1 /* LockPro.r in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		508817D109F0C9AD0071BF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF531912209C4FA0097A9BA /* ArtSetHelper.cpp in Sources */,
+				2AE03E3E0CF6F76A00C6B585 /* IllustratorSDK.cpp in Sources */,
+				9D50F055262478BF00E4A31D /* DocumentHelper.cpp in Sources */,
+				19463FA71E013063001929C1 /* SDKAboutPluginsHelper.cpp in Sources */,
+				9DAD4A3C220AE4680051A33A /* JJLock.cpp in Sources */,
+				19463FA01E012AF0001929C1 /* JJLockSuites.cpp in Sources */,
+				19463FB31E03907E001929C1 /* IThrowException.cpp in Sources */,
+				19463F9E1E012AF0001929C1 /* JJLockPlugin.cpp in Sources */,
+				2A9235D20E2FB5D2001EA6E3 /* AppContext.cpp in Sources */,
+				2A9235D30E2FB5D2001EA6E3 /* Main.cpp in Sources */,
+				2A9235D40E2FB5D2001EA6E3 /* Plugin.cpp in Sources */,
+				2A9235D70E2FB5D2001EA6E3 /* Suites.cpp in Sources */,
+				E80C4D2A1EBB21E40091ED13 /* Tool.cpp in Sources */,
+				2A9235DD0E2FB5EC001EA6E3 /* IAIUnicodeString.cpp in Sources */,
+				19463FB21E03907E001929C1 /* IText.cpp in Sources */,
+				9E9C47181423A25E004EA572 /* SDKPlugPlug.cpp in Sources */,
+				9E9C475A1423AD0C004EA572 /* IAIFilePath.cpp in Sources */,
+				9D50F054262478BF00E4A31D /* SelectionHelper.cpp in Sources */,
+				19463FA91E013E4B001929C1 /* SDKErrors.cpp in Sources */,
+				1979A5E31E27734F006D6B4B /* JJLockPanel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		508817C609F0C9740071BF1A /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AI_CONFIGURATION = debug;
+				AI_LOCALE = en_US;
+				AI_PLATFORM = xcode;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CONFIGURATION_BUILD_DIR = "./../output/mac/$(AI_CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/Default";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib",
+				);
+				GCC_DEBUGGING_SYMBOLS = used;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "./../common/includes/IllustratorSDK$(AI_CONFIGURATION).pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"./../../illustratorapi/**",
+					"${SDKROOT}/Developer/Headers/FlatCarbon/**",
+					"./**",
+					"./../common/**",
+					/opt/Develop/Qt/JJLockUI,
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtCore.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtGui.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtWidgets.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtXml.framework/Versions/5/Headers",
+				);
+				INFOPLIST_FILE = ../common/mac/Info.plist;
+				INFOPLIST_PREFIX_HEADER = ../common/includes/SDKDef.h;
+				INFOPLIST_PREPROCESS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "/Applications/Qt/${QT_VERSION}/clang_64/lib /opt/Develop/Qt/build-JJLockUI/Debug";
+				LIBRARY_SEARCH_PATHS = "/opt/Develop/Qt/build-JJLockUI/Debug";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = .;
+				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
+				PRODUCT_NAME = "J&J Lock";
+				PROJECTNAME = LockPro;
+				QT_VERSION = 5.6;
+				REZ_SEARCH_PATHS = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = macosx;
+				SEPARATE_STRIP = NO;
+				SHARED_PRECOMPS_DIR = "./../output/mac/sharedprecompiledheaders/$(AI_CONFIGURATION)";
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				SYMROOT = "./../output/mac/$(AI_CONFIGURATION)";
+				VALID_ARCHS = "i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = Version;
+				WRAPPER_EXTENSION = aip;
+				ZERO_LINK = NO;
+			};
+			name = debug;
+		};
+		508817C709F0C9740071BF1A /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AI_CONFIGURATION = release;
+				AI_LOCALE = en_US;
+				AI_PLATFORM = xcode;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CONFIGURATION_BUILD_DIR = "./../output/mac/$(AI_CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/Default";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib",
+				);
+				GCC_DEBUGGING_SYMBOLS = used;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "./../common/includes/IllustratorSDK$(AI_CONFIGURATION).pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"./../../illustratorapi/**",
+					"${SDKROOT}/Developer/Headers/FlatCarbon/**",
+					"./**",
+					"./../common/**",
+					/opt/Develop/Qt/JJLockUI,
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtCore.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtGui.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtWidgets.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtXml.framework/Versions/5/Headers",
+				);
+				INFOPLIST_FILE = ../common/mac/Info.plist;
+				INFOPLIST_PREFIX_HEADER = ../common/includes/SDKDef.h;
+				INFOPLIST_PREPROCESS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks";
+				LIBRARY_SEARCH_PATHS = "/opt/Develop/Qt/build-JJLockUI/Release";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = .;
+				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
+				PREBINDING = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
+				PRODUCT_NAME = "J&J Lock";
+				PROJECTNAME = LockPro;
+				QT_VERSION = 5.6;
+				REZ_SEARCH_PATHS = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = macosx;
+				SEPARATE_STRIP = NO;
+				SHARED_PRECOMPS_DIR = "./../output/mac/sharedprecompiledheaders/$(AI_CONFIGURATION)";
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				SYMROOT = "./../output/mac/$(AI_CONFIGURATION)";
+				VALID_ARCHS = "i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = Version;
+				WRAPPER_EXTENSION = aip;
+				ZERO_LINK = NO;
+			};
+			name = release;
+		};
+		508817D809F0C9AE0071BF1A /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CURRENT_PROJECT_VERSION = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/**",
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"./../../illustratorapi/**",
+					"${SDKROOT}/Developer/Headers/FlatCarbon/**",
+					"./**",
+					"./../common/**",
+					/opt/Develop/Qt/JJLockUI_3.2,
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtCore.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtGui.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtWidgets.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtXml.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/mkspecs/macx-clang",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "/Applications/Qt/${QT_VERSION}/clang_64/lib /opt/Develop/Qt/build_JJLockUI_3.2/debug";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/opt/Develop/Qt/build_JJLockUI_3.2/Debug,
+					/opt/Develop/Qt/build_JJLockUI_3.2/debug,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = LockPro;
+				PROJECTNAME = LockPro;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = debug;
+		};
+		508817D909F0C9AE0071BF1A /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CURRENT_PROJECT_VERSION = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/**",
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"./../../illustratorapi/**",
+					"${SDKROOT}/Developer/Headers/FlatCarbon/**",
+					"./**",
+					"./../common/**",
+					/opt/Develop/Qt/JJLockUI_3.2,
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtCore.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtGui.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtWidgets.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/lib/QtXml.framework/Versions/5/Headers",
+					"/Applications/Qt/${QT_VERSION}/clang_64/mkspecs/macx-clang",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /opt/Develop/Qt/build_JJLockUI_3.2/release";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/opt/Develop/Qt/build_JJLockUI_3.2/release,
+					/opt/Develop/Qt/build_JJLockUI_3.2/debug,
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/opt/Develop/Qt/build_JJLockUI_3.2/release,
+					/opt/Develop/Qt/build_JJLockUI_3.2/Debug,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = LockPro;
+				PROJECTNAME = LockPro;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		508817C509F0C9740071BF1A /* Build configuration list for PBXProject "LockPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508817C609F0C9740071BF1A /* debug */,
+				508817C709F0C9740071BF1A /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = release;
+		};
+		508817D709F0C9AE0071BF1A /* Build configuration list for PBXNativeTarget "LockPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508817D809F0C9AE0071BF1A /* debug */,
+				508817D909F0C9AE0071BF1A /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 508817C409F0C9740071BF1A /* Project object */;
+}
