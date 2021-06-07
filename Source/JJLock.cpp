@@ -1089,7 +1089,7 @@ bool JJLock::ClearMissingArtLockAndBound(vector<ai::UnicodeString> sourceIDList,
     return corruptedArtWork;
 }
 
-QStringList dictKeyStringList = {"charStrokeStyle", "charStrokeStyleBool","charFillStyle", "charFillStyleBool", "charFontFamilyName", "charFontStyleName", "JJLockArtBoundBottom", "JJLockArtBoundLeft", "JJLockArtBoundRight", "JJLockArtBoundTop", "JJLockArtOwnBoundBottom", "JJLockArtOwnBoundLeft", "JJLockArtOwnBoundRight", "JJLockArtOwnBoundTop", "JJLockContent", "lock", "lockBoundID", "lockIconID", "ParaJustification", "charHScaleSize", "clock", "pclock", "plock", "layerName", "compPathFillStyle", "compPathStrokeStyle", "textFrameFillStyleBool", "textFrameFillStyle", "textFrameStrokeStyleBool", "textFrameStrokeStyle"};
+QStringList dictKeyStringList = {"charStrokeStyle", "charStrokeStyleBool","charFillStyle", "charFillStyleBool", "charFontFamilyName", "charFontStyleName", "JJLockArtBoundBottom", "JJLockArtBoundLeft", "JJLockArtBoundRight", "JJLockArtBoundTop", "JJLockArtOwnBoundBottom", "JJLockArtOwnBoundLeft", "JJLockArtOwnBoundRight", "JJLockArtOwnBoundTop", "JJLockContent", "lock", "lockBoundID", "lockIconID", "ParaJustification", "charHScaleSize", "clock", "pclock", "plock", "layerName", "compPathFillStyle", "compPathStrokeStyle", "textFrameFillStyleBool", "textFrameFillStyle", "textFrameStrokeStyleBool", "textFrameStrokeStyle", "charFontSize"};
 
 void JJLock::ClearDictEntries(AIArtHandle artHandle)
 {
@@ -1175,7 +1175,7 @@ void JJLock::ParseGroupChildArtandClearLock(AIArtHandle groupArtHandle)
                     jjLockPanel.CheckAndReleaseParentIDForChild(lastChildHandle);
                 }
                 ClearDictEntries(lastChildHandle);
-                sAIDocument->RedrawDocument();
+          //      sAIDocument->RedrawDocument();
             }
             else if(childArtType == kPathArt && GetBooleanEntryFromHandleDict(lastChildHandle, "lock") == true)
             {
@@ -1184,7 +1184,7 @@ void JJLock::ParseGroupChildArtandClearLock(AIArtHandle groupArtHandle)
                     jjLockPanel.CheckAndReleaseParentIDForChild(lastChildHandle);
                 }
                 ClearDictEntries(lastChildHandle);
-                sAIDocument->RedrawDocument();
+           //     sAIDocument->RedrawDocument();
             }
             else if(childArtType == kPluginArt && GetBooleanEntryFromHandleDict(lastChildHandle, "lock") == true)
             {
@@ -1221,7 +1221,12 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
     short artType;
     sAIArt->GetArtType(groupArtHandle, &artType);
     if(artType == kGroupArt)
+    {
+        DeleteDictionaryForAnEntry(groupArtHandle, "totalGroupChildCount");
+        DeleteDictionaryForAnEntry(groupArtHandle, "GGroupID");
+        DeleteDictionaryForAnEntry(groupArtHandle, "lockPos");
         sAIArt->GetArtLastChild(groupArtHandle, &lastChildHandle);
+    }
     else
         lastChildHandle = groupArtHandle;
     while(lastChildHandle != NULL)
@@ -1237,8 +1242,11 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 {
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockBool");
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockType");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GGroupID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
+                    ClearDictEntries(lastChildHandle);
                 }
                 else
                 {
@@ -1253,8 +1261,10 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 {
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockBool");
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockType");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
+                    ClearDictEntries(lastChildHandle);
                 }
                 else
                 {
@@ -1268,8 +1278,10 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 {
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockBool");
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockType");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
+                    ClearDictEntries(lastChildHandle);
                 }
                 else
                 {
@@ -1345,8 +1357,10 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 {
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockBool");
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockType");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
+                    ClearDictEntries(lastChildHandle);
                 }
                 else
                 {
@@ -1360,8 +1374,10 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 {
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockBool");
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockType");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
+                    ClearDictEntries(lastChildHandle);
                 }
                 else
                 {
@@ -1375,8 +1391,10 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 {
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockBool");
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockType");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
+                    ClearDictEntries(lastChildHandle);
                 }
                 else
                 {
@@ -1390,8 +1408,10 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 {
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockBool");
                     DeleteDictionaryForAnEntry(lastChildHandle, "groupChildLockType");
+                    DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
+                    ClearDictEntries(lastChildHandle);
                 }
                 else
                 {
@@ -2572,6 +2592,8 @@ AIErr JJLock::DeleteDictionaryUsingIteratorCheck(AIArtHandle artHandle, QStringL
                 DeleteDictionaryForAnEntry(artHandle, sAIDictionary->GetKeyString(dictKey));
             }
         }
+        JJLockPanel jjlockPanel;
+        jjlockPanel.ReleaseLockClickedTest();
         sAIDictionary->Release(artDict);
     }
     catch (ai::Error &ex)

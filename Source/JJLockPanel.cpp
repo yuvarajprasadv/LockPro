@@ -35,7 +35,7 @@ JJLockPanel::~JJLockPanel()
 
 }
 
-QStringList keyStringListToClear = {"clock", "plock", "pclock", "layerName", "JJLockArtBoundBottom", "JJLockArtBoundLeft", "JJLockArtBoundRight", "JJLockArtBoundTop", "JJLockArtOwnBoundBottom", "JJLockArtOwnBoundLeft", "JJLockArtOwnBoundRight", "JJLockArtOwnBoundTop", "JJLockContent", "JJLockContent", "charFillStyleBool", "charFillStyle", "charStrokeStyleBool", "charStrokeStyle", "charFontStyleName", "charFontFamilyName", "charFontSize", "charHScaleSize", "ParaJustification", "pathSegments", "pathFillStyle", "pathStrokeStyle", "compPathFillStyle", "compPathStrokeStyle", "pathArea", "pathLength",  "textFrameFillStyleBool", "textFrameFillStyle", "textFrameStrokeStyleBool", "textFrameStrokeStyle"};
+QStringList keyStringListToClear = {"clock", "plock", "pclock", "layerName", "JJLockArtBoundBottom", "JJLockArtBoundLeft", "JJLockArtBoundRight", "JJLockArtBoundTop", "JJLockArtOwnBoundBottom", "JJLockArtOwnBoundLeft", "JJLockArtOwnBoundRight", "JJLockArtOwnBoundTop", "JJLockContent", "charFillStyleBool", "charFillStyle", "charStrokeStyleBool", "charStrokeStyle", "charFontStyleName", "charFontFamilyName", "charFontSize", "charHScaleSize", "ParaJustification", "pathSegments", "pathFillStyle", "pathStrokeStyle", "compPathFillStyle", "compPathStrokeStyle", "pathArea", "pathLength",  "textFrameFillStyleBool", "textFrameFillStyle", "textFrameStrokeStyleBool", "textFrameStrokeStyle"};
 
 void JJLockPanel::ContentLockClicked()
 {
@@ -295,6 +295,11 @@ void JJLockPanel::ContentLockClicked(AIArtHandle recreateArtHandle)
             {
                 isNotChildLocked = true;
                 ParseGroupChildForLockCheck(artHandle);
+                
+                if(!isNotChildLocked)
+                {
+                    break;
+                }
                 if(isNotChildLocked)
                 {
                     if(sAIArt->HasDictionary(artHandle) && !(sAIArt->IsDictionaryEmpty(artHandle)))
@@ -314,7 +319,7 @@ void JJLockPanel::ContentLockClicked(AIArtHandle recreateArtHandle)
                         int totalChildCount = 0;
                  
                         ParseGroupChildForLock(artHandle, &totalChildCount, "clock");
-                        qDebug()<< "totalChildCount C "<<totalChildCount;
+                    //    qDebug()<< "totalChildCount C "<<totalChildCount;
                         result = jjLock->SetIntegerEntryToHandleDict(artHandle, "totalGroupChildCount",  totalChildCount);
                         aisdk::check_ai_error(result);
                         AIRealRect artBounds = {0,0,0,0};
@@ -577,7 +582,7 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
         if(lastChildHandle != NULL)
         {
             *totalChildCount += 1;
-            qDebug() << "INT " << totalChildCount << " " << *totalChildCount ;
+      //     qDebug() << "INT " << totalChildCount << " " << *totalChildCount ;
             
             AIArtHandle parentHandle;
             ai::UnicodeString gLockGID;
@@ -591,18 +596,18 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
 //                if(jjLock->GetUnicodeStringEntryFromHandleDict(lastChildHandle, "GGroupID") == ai::UnicodeString(""))
                 if(jjLock->GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID") != ai::UnicodeString(""))
                 {
-                    qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID").as_UTF8().c_str();
+          //          qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID").as_UTF8().c_str();
                     jjLock->SetUnicodeStringEntryToHandleDict(groupArtHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID"));
                     
                     gLockGID = JJLockPanel::CreateUUID();
                     jjLock->SetUnicodeStringEntryToHandleDict(groupArtHandle, "GGroupID", gLockGID);
-                    qDebug() << "sd "<<jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+              //      qDebug() << "sd "<<jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
                 }
                 else
                 {
                     gLockGID = JJLockPanel::CreateUUID();
                     jjLock->SetUnicodeStringEntryToHandleDict(groupArtHandle, "GGroupID", gLockGID);
-                    qDebug() << "sd "<<jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+                 //   qDebug() << "sd "<<jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
                 }
                 
                 
@@ -646,7 +651,7 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
             jjLock->SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString(lockType), "groupChildLockType");
             *totalChildCount += 1;
             
-            qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+        //    qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
             if(jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
             {
                 jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
@@ -687,7 +692,7 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
                 jjLock->SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString(lockType), "groupChildLockType");
                 *totalChildCount += 1;
                 
-                qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+           //     qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
                 if(jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
                 {
                     jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
@@ -798,7 +803,7 @@ void JJLockPanel::ParseGroupChildForLock(AIArtHandle groupArtHandle, int *totalC
             jjLock->SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString(lockType), "groupChildLockType");
             *totalChildCount += 1;
             
-            qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
+      //      qDebug() << jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID").as_UTF8().c_str();
             if(jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
             {
                 jjLock->SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
@@ -903,7 +908,7 @@ void JJLockPanel::ParseGroupChildForCount(AIArtHandle groupArtHandle, int* count
         sAIArt->GetArtLastChild(groupArtHandle, &lastChildHandle);
         if(lastChildHandle != NULL)
         {
-            qDebug() << "INT " << *countChild ;
+   //         qDebug() << "INT " << *countChild ;
             *countChild += 1;
           
         }
@@ -1284,11 +1289,13 @@ void JJLockPanel::ContentAndPositionLockClicked(AIArtHandle recreateArtHandle)
             std::vector<AIArtHandle> linkArtHanldes;
       //      qDebug() << "TYPE " << type << "count " <<count;
       //      qDebug() << jjLock->GetBooleanEntryFromHandleDict(artHandle, "groupChildLockBool");
-          /*  if(jjLock->GetBooleanEntryFromHandleDict(artHandle, "groupChildLockBool"))
+            
+            
+            if(jjLock->GetBooleanEntryFromHandleDict(artHandle, "groupChildLockBool"))
             {
                 sAIUser->MessageAlert(ai::UnicodeString("Group art object group is locked. Please try after unlocking group to lock child art."));
                 break;
-            }*/
+            }
             
             if(artHandle != NULL &&  type == kTextFrameArt )
             {
@@ -1549,6 +1556,8 @@ void JJLockPanel::ContentAndPositionLockClicked(AIArtHandle recreateArtHandle)
             {
                 isNotChildLocked = true;
                 ParseGroupChildForLockCheck(artHandle);
+                if(!isNotChildLocked)
+                    break;
                 if(isNotChildLocked)
                 {
                     if(sAIArt->HasDictionary(artHandle) && !(sAIArt->IsDictionaryEmpty(artHandle)))
@@ -1565,7 +1574,7 @@ void JJLockPanel::ContentAndPositionLockClicked(AIArtHandle recreateArtHandle)
                             jjLock->CreateLockBound(artHandle, lockLayer, NULL,  GetIconImagePath("pclock.pdf"));
                         int totalChildCount = 0;
                         ParseGroupChildForLock(artHandle, &totalChildCount, "pclock");
-                        qDebug()<< "totalChildCount C "<<totalChildCount;
+             //           qDebug()<< "totalChildCount C "<<totalChildCount;
                         result = jjLock->SetIntegerEntryToHandleDict(artHandle, "totalGroupChildCount",  totalChildCount);
                         aisdk::check_ai_error(result);
                         
@@ -1771,7 +1780,7 @@ void JJLockPanel::LoggerAPI()
         jjLock.SetIntegerEntryToDocumentDict("lockAPI", toggleLockAPI);
     }
 }
-/*
+
 // ORGINAL
 void JJLockPanel::ReleaseLockClicked()
 {
@@ -1864,7 +1873,7 @@ void JJLockPanel::ReleaseLockClicked(AIArtHandle releaseHandle)
         }
     }
 }
-*/
+
 
 
 void JJLockPanel::ParseCompoundPathForLock(AIArtHandle compoundPathArtHandle, string lockType)
@@ -2100,7 +2109,7 @@ void JJLockPanel::CheckAndReleaseParentIDForChild(AIArtHandle childHandle)
 
 //Dummy for testing
 
- void JJLockPanel::ReleaseLockClicked()
+ void JJLockPanel::ReleaseLockClickedTest()
  {
  AppContext appContext(gPlugin->GetPluginRef());
  ASErr result = kNoErr;
@@ -2124,7 +2133,7 @@ void JJLockPanel::CheckAndReleaseParentIDForChild(AIArtHandle childHandle)
 //
 //
 
-     if(jjLock->IsAnyArtSelected(NULL))
+ //    if(jjLock->IsAnyArtSelected(NULL))
      {
      //   AIArtSpec artSpec[7] = {{kTextFrameArt, kArtTargeted, kArtTargeted}, {kPlacedArt, kArtTargeted, kArtTargeted}, {kGroupArt, kArtTargeted, kArtTargeted}, {kPathArt, kArtTargeted, kArtTargeted}, {kPluginArt, kArtTargeted, kArtTargeted}, {kCompoundPathArt, kArtTargeted, kArtTargeted}, {kSymbolArt, kArtTargeted, kArtTargeted}};
      
@@ -2148,8 +2157,8 @@ void JJLockPanel::CheckAndReleaseParentIDForChild(AIArtHandle childHandle)
                 //sAIPluginGroup->GetPluginArtEditArt(artHandle, &editArtHandle);
                   sAIArt->GetArtType(artHandle, &shortType);
                  jjLock->FetchAllDictionaryUsingIterator(artHandle);
-                 ParseGroupChildForCount(artHandle, &countGroupChild);
-                 qDebug() << " ccountGroupChild " << countGroupChild;
+                 //ParseGroupChildForCount(artHandle, &countGroupChild);
+                // qDebug() << " ccountGroupChild " << countGroupChild;
 //                  if(shortType == kGroupArt)
 //                  {
 //                      ParseGroupChildForLock(artHandle, "");

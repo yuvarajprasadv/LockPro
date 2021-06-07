@@ -825,7 +825,7 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                             int countGroupChild = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                             objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                            qDebug() << countGroupChild <<"  " << totalGroupChildCount;
+                 //           qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                             if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
@@ -872,7 +872,7 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                             int countGroupChild = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                             objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                            qDebug() << countGroupChild <<"  " << totalGroupChildCount;
+                //            qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                             if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
@@ -2039,7 +2039,7 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                         int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                     //    int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                         objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                        qDebug() << countGroupChild <<"  " << totalGroupChildCount;
+             //          qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                       //  if(totalGroupChildCount == 0 && )
                         if((countGroupChild != totalGroupChildCount) && totalGroupChildCount !=0)
                         {
@@ -2108,7 +2108,7 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                             int countGroupChild = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                             objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                            qDebug() << countGroupChild <<"  " << totalGroupChildCount;
+                        //    qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                             if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
@@ -3640,9 +3640,10 @@ void PanelFlyoutMenuProc(AIPanelRef inPanel, ai::uint32 itemID)
             error = sAIPanelFlyoutMenu->SetItemMark(flyoutMenu, 1, kAIPanelFlyoutMenuItemMark_NONE);
             jjLockPanel.MoveLockIcon();
             break;
-//        case 2:
-//            error = sAIPanelFlyoutMenu->SetItemMark(flyoutMenu, 2, kAIPanelFlyoutMenuItemMark_NONE);
-//            break;
+        case 2:
+            error = sAIPanelFlyoutMenu->SetItemMark(flyoutMenu, 2, kAIPanelFlyoutMenuItemMark_NONE);
+            jjLockPanel.ReleaseLockClickedTest();
+            break;
         default:
             break;
     }
@@ -3717,10 +3718,10 @@ ASErr JJLockPlugin::CreatePanel()
     }
     
     error = sAIPanelFlyoutMenu->AppendItem(fPanelFlyoutMenu, 1, ai::UnicodeString("Move Lock Icon"));
-  //  error = sAIPanelFlyoutMenu->AppendItem(fPanelFlyoutMenu, 2, ai::UnicodeString("NULL"));
+    error = sAIPanelFlyoutMenu->AppendItem(fPanelFlyoutMenu, 2, ai::UnicodeString("For Test"));
     
     error = sAIPanelFlyoutMenu->SetItemMark(fPanelFlyoutMenu, 1 , kAIPanelFlyoutMenuItemMark_NONE);
-   // error = sAIPanelFlyoutMenu->SetItemMark(fPanelFlyoutMenu, 2 , kAIPanelFlyoutMenuItemMark_NONE);
+    error = sAIPanelFlyoutMenu->SetItemMark(fPanelFlyoutMenu, 2 , kAIPanelFlyoutMenuItemMark_NONE);
     
     
     error = sAIPanel->Create(fPluginRef, ai::UnicodeString("Locking"), ai::UnicodeString("Locking"), 2, minSize, isResizeable, fPanelFlyoutMenu, inUserData, fPanel);

@@ -62,6 +62,9 @@ public:
     void CheckAndReleaseParentIDForChild(AIArtHandle childHandle);
     
     
+    void ReleaseLockClickedTest();
+    
+    
 private:
     bool isNotChildLocked = true;
     
