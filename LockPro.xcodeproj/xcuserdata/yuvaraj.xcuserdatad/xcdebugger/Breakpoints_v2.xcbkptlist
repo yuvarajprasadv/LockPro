@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.534505"
+            timestampString = "644817899.464851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "831"
-            endingLineNumber = "831"
+            startingLineNumber = "817"
+            endingLineNumber = "817"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.534979"
+            timestampString = "644817899.46518"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "878"
-            endingLineNumber = "878"
+            startingLineNumber = "861"
+            endingLineNumber = "861"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535103"
+            timestampString = "644817899.465264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2046"
-            endingLineNumber = "2046"
+            startingLineNumber = "2020"
+            endingLineNumber = "2020"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535213"
+            timestampString = "644817899.46534"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2114"
-            endingLineNumber = "2114"
+            startingLineNumber = "2088"
+            endingLineNumber = "2088"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535289"
+            timestampString = "644817899.465413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "399"
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535359"
+            timestampString = "644817899.465486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "467"
-            endingLineNumber = "467"
+            startingLineNumber = "466"
+            endingLineNumber = "466"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535427"
+            timestampString = "644817899.4655581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "502"
-            endingLineNumber = "502"
+            startingLineNumber = "501"
+            endingLineNumber = "501"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535495"
+            timestampString = "644817899.465629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "640"
-            endingLineNumber = "640"
+            startingLineNumber = "639"
+            endingLineNumber = "639"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535563"
+            timestampString = "644817899.465701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "674"
-            endingLineNumber = "674"
+            startingLineNumber = "673"
+            endingLineNumber = "673"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.53563"
+            timestampString = "644817899.465773"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "758"
-            endingLineNumber = "758"
+            startingLineNumber = "757"
+            endingLineNumber = "757"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535697"
+            timestampString = "644817899.465843"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "804"
-            endingLineNumber = "804"
+            startingLineNumber = "793"
+            endingLineNumber = "793"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535768"
+            timestampString = "644817899.465915"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3434"
-            endingLineNumber = "3434"
+            startingLineNumber = "3408"
+            endingLineNumber = "3408"
             landmarkName = "JJLockPlugin::LayerChangeCheck()"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535836"
+            timestampString = "644817899.465986"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3271"
-            endingLineNumber = "3271"
+            startingLineNumber = "3245"
+            endingLineNumber = "3245"
             landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535902"
+            timestampString = "644817899.466056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3252"
-            endingLineNumber = "3252"
+            startingLineNumber = "3226"
+            endingLineNumber = "3226"
             landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.535972"
+            timestampString = "644817899.466127"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3203"
-            endingLineNumber = "3203"
+            startingLineNumber = "3177"
+            endingLineNumber = "3177"
             landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536049"
+            timestampString = "644817899.466199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3191"
-            endingLineNumber = "3191"
+            startingLineNumber = "3165"
+            endingLineNumber = "3165"
             landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,39 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536116"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3175"
-            endingLineNumber = "3175"
-            landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536184"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3161"
-            endingLineNumber = "3161"
-            landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536248"
+            timestampString = "644817899.46627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "3149"
@@ -314,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536319"
+            timestampString = "644817899.466342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3137"
-            endingLineNumber = "3137"
+            startingLineNumber = "3135"
+            endingLineNumber = "3135"
             landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5363851"
+            timestampString = "644817899.466416"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3118"
-            endingLineNumber = "3118"
+            startingLineNumber = "3123"
+            endingLineNumber = "3123"
             landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536451"
+            timestampString = "644817899.466489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3089"
-            endingLineNumber = "3089"
+            startingLineNumber = "3111"
+            endingLineNumber = "3111"
             landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,11 +330,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536517"
+            timestampString = "644817899.4665591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3026"
-            endingLineNumber = "3026"
+            startingLineNumber = "3092"
+            endingLineNumber = "3092"
+            landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.46663"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3063"
+            endingLineNumber = "3063"
+            landmarkName = "JJLockPlugin::ParseCompoundPathArtGroupCheck(AIArtHandle topParentArtHandle, AIArtHandle compoundPathArtHandle, std::string lockType)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.4667"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "3000"
+            endingLineNumber = "3000"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,11 +378,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536584"
+            timestampString = "644817899.466772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "3009"
-            endingLineNumber = "3009"
+            startingLineNumber = "2983"
+            endingLineNumber = "2983"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5366499"
+            timestampString = "644817899.4668421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2985"
-            endingLineNumber = "2985"
+            startingLineNumber = "2959"
+            endingLineNumber = "2959"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536718"
+            timestampString = "644817899.4669141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2973"
-            endingLineNumber = "2973"
+            startingLineNumber = "2947"
+            endingLineNumber = "2947"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,39 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536785"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2957"
-            endingLineNumber = "2957"
-            landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536851"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2943"
-            endingLineNumber = "2943"
-            landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536917"
+            timestampString = "644817899.4669859"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2931"
@@ -474,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.536984"
+            timestampString = "644817899.467056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2919"
-            endingLineNumber = "2919"
+            startingLineNumber = "2917"
+            endingLineNumber = "2917"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -490,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.53705"
+            timestampString = "644817899.467128"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2900"
-            endingLineNumber = "2900"
+            startingLineNumber = "2905"
+            endingLineNumber = "2905"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -506,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537115"
+            timestampString = "644817899.467211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2871"
-            endingLineNumber = "2871"
+            startingLineNumber = "2893"
+            endingLineNumber = "2893"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -522,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5371799"
+            timestampString = "644817899.467283"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2804"
-            endingLineNumber = "2804"
+            startingLineNumber = "2874"
+            endingLineNumber = "2874"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -538,11 +506,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537246"
+            timestampString = "644817899.467355"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2789"
-            endingLineNumber = "2789"
+            startingLineNumber = "2845"
+            endingLineNumber = "2845"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -554,11 +522,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537312"
+            timestampString = "644817899.4674259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2777"
-            endingLineNumber = "2777"
+            startingLineNumber = "2778"
+            endingLineNumber = "2778"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -570,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537377"
+            timestampString = "644817899.467497"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2704"
-            endingLineNumber = "2704"
+            startingLineNumber = "2763"
+            endingLineNumber = "2763"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -586,11 +554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537442"
+            timestampString = "644817899.467568"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2666"
-            endingLineNumber = "2666"
+            startingLineNumber = "2751"
+            endingLineNumber = "2751"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -602,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537504"
+            timestampString = "644817899.4676369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2654"
-            endingLineNumber = "2654"
+            startingLineNumber = "2678"
+            endingLineNumber = "2678"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -618,11 +586,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537568"
+            timestampString = "644817899.4677089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2638"
-            endingLineNumber = "2638"
+            startingLineNumber = "2640"
+            endingLineNumber = "2640"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -634,11 +602,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.53763"
+            timestampString = "644817899.467779"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2624"
-            endingLineNumber = "2624"
+            startingLineNumber = "2628"
+            endingLineNumber = "2628"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -650,7 +618,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537693"
+            timestampString = "644817899.467849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2612"
@@ -666,11 +634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537757"
+            timestampString = "644817899.467919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2600"
-            endingLineNumber = "2600"
+            startingLineNumber = "2598"
+            endingLineNumber = "2598"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -682,11 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.53782"
+            timestampString = "644817899.467989"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2581"
-            endingLineNumber = "2581"
+            startingLineNumber = "2586"
+            endingLineNumber = "2586"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -698,7 +666,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537884"
+            timestampString = "644817899.4680589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2574"
@@ -714,11 +682,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.537949"
+            timestampString = "644817899.468129"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2529"
-            endingLineNumber = "2529"
+            startingLineNumber = "2555"
+            endingLineNumber = "2555"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -730,11 +698,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538013"
+            timestampString = "644817899.468197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2521"
-            endingLineNumber = "2521"
+            startingLineNumber = "2548"
+            endingLineNumber = "2548"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -746,11 +714,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538079"
+            timestampString = "644817899.468267"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2511"
-            endingLineNumber = "2511"
+            startingLineNumber = "2503"
+            endingLineNumber = "2503"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -762,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5381449"
+            timestampString = "644817899.468336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2502"
-            endingLineNumber = "2502"
+            startingLineNumber = "2495"
+            endingLineNumber = "2495"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -778,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538211"
+            timestampString = "644817899.468407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2494"
-            endingLineNumber = "2494"
+            startingLineNumber = "2485"
+            endingLineNumber = "2485"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -794,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.53828"
+            timestampString = "644817899.468479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2486"
-            endingLineNumber = "2486"
+            startingLineNumber = "2476"
+            endingLineNumber = "2476"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -810,11 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538355"
+            timestampString = "644817899.46855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2474"
-            endingLineNumber = "2474"
+            startingLineNumber = "2468"
+            endingLineNumber = "2468"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -826,11 +794,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538422"
+            timestampString = "644817899.468622"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2467"
-            endingLineNumber = "2467"
+            startingLineNumber = "2460"
+            endingLineNumber = "2460"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -842,11 +810,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538488"
+            timestampString = "644817899.468695"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2432"
-            endingLineNumber = "2432"
+            startingLineNumber = "2448"
+            endingLineNumber = "2448"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -858,11 +826,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538555"
+            timestampString = "644817899.468768"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2417"
-            endingLineNumber = "2417"
+            startingLineNumber = "2441"
+            endingLineNumber = "2441"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -874,11 +842,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538618"
+            timestampString = "644817899.468839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2350"
-            endingLineNumber = "2350"
+            startingLineNumber = "2406"
+            endingLineNumber = "2406"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -890,11 +858,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5386831"
+            timestampString = "644817899.4689111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2126"
-            endingLineNumber = "2126"
+            startingLineNumber = "2391"
+            endingLineNumber = "2391"
+            landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.468982"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2324"
+            endingLineNumber = "2324"
+            landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.46911"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2100"
+            endingLineNumber = "2100"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -906,11 +906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538747"
+            timestampString = "644817899.469198"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2057"
-            endingLineNumber = "2057"
+            startingLineNumber = "2032"
+            endingLineNumber = "2032"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -922,11 +922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538812"
+            timestampString = "644817899.469274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2005"
-            endingLineNumber = "2005"
+            startingLineNumber = "1978"
+            endingLineNumber = "1978"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -938,11 +938,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.538882"
+            timestampString = "644817899.469348"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1846"
-            endingLineNumber = "1846"
+            startingLineNumber = "1819"
+            endingLineNumber = "1819"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -954,11 +954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5389481"
+            timestampString = "644817899.469421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1790"
-            endingLineNumber = "1790"
+            startingLineNumber = "1763"
+            endingLineNumber = "1763"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -970,11 +970,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539012"
+            timestampString = "644817899.469493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1777"
-            endingLineNumber = "1777"
+            startingLineNumber = "1750"
+            endingLineNumber = "1750"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -986,11 +986,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539077"
+            timestampString = "644817899.469566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1760"
-            endingLineNumber = "1760"
+            startingLineNumber = "1733"
+            endingLineNumber = "1733"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1002,11 +1002,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539142"
+            timestampString = "644817899.4696389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1745"
-            endingLineNumber = "1745"
+            startingLineNumber = "1718"
+            endingLineNumber = "1718"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1018,11 +1018,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539206"
+            timestampString = "644817899.4697109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1732"
-            endingLineNumber = "1732"
+            startingLineNumber = "1705"
+            endingLineNumber = "1705"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1034,11 +1034,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539271"
+            timestampString = "644817899.469784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1719"
-            endingLineNumber = "1719"
+            startingLineNumber = "1692"
+            endingLineNumber = "1692"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1050,11 +1050,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5393341"
+            timestampString = "644817899.469855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1699"
-            endingLineNumber = "1699"
+            startingLineNumber = "1672"
+            endingLineNumber = "1672"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1066,11 +1066,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5394"
+            timestampString = "644817899.469927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1662"
-            endingLineNumber = "1662"
+            startingLineNumber = "1635"
+            endingLineNumber = "1635"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1082,23 +1082,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539466"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1528"
-            endingLineNumber = "1528"
-            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.53953"
+            timestampString = "644817899.47"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1501"
@@ -1114,11 +1098,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539593"
+            timestampString = "644817899.470072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1442"
-            endingLineNumber = "1442"
+            startingLineNumber = "1474"
+            endingLineNumber = "1474"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1130,11 +1114,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539658"
+            timestampString = "644817899.470142"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1428"
-            endingLineNumber = "1428"
+            startingLineNumber = "1415"
+            endingLineNumber = "1415"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1146,11 +1130,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539722"
+            timestampString = "644817899.470214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1416"
-            endingLineNumber = "1416"
+            startingLineNumber = "1401"
+            endingLineNumber = "1401"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1162,11 +1146,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539788"
+            timestampString = "644817899.470282"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1337"
-            endingLineNumber = "1337"
+            startingLineNumber = "1389"
+            endingLineNumber = "1389"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1178,11 +1162,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539868"
+            timestampString = "644817899.470354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1303"
-            endingLineNumber = "1303"
+            startingLineNumber = "1310"
+            endingLineNumber = "1310"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1194,11 +1178,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.539961"
+            timestampString = "644817899.470427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1294"
-            endingLineNumber = "1294"
+            startingLineNumber = "1276"
+            endingLineNumber = "1276"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1210,11 +1194,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540061"
+            timestampString = "644817899.4705"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1192"
-            endingLineNumber = "1192"
+            startingLineNumber = "1267"
+            endingLineNumber = "1267"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1226,11 +1210,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540139"
+            timestampString = "644817899.47057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1181"
-            endingLineNumber = "1181"
+            startingLineNumber = "1165"
+            endingLineNumber = "1165"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1242,11 +1226,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540204"
+            timestampString = "644817899.470643"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1166"
-            endingLineNumber = "1166"
+            startingLineNumber = "1154"
+            endingLineNumber = "1154"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1258,11 +1242,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5402679"
+            timestampString = "644817899.470716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1153"
-            endingLineNumber = "1153"
+            startingLineNumber = "1139"
+            endingLineNumber = "1139"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1274,11 +1258,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540333"
+            timestampString = "644817899.470788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1142"
-            endingLineNumber = "1142"
+            startingLineNumber = "1126"
+            endingLineNumber = "1126"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1290,11 +1274,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540398"
+            timestampString = "644817899.4708591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1131"
-            endingLineNumber = "1131"
+            startingLineNumber = "1115"
+            endingLineNumber = "1115"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1306,11 +1290,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540463"
+            timestampString = "644817899.4709359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1112"
-            endingLineNumber = "1112"
+            startingLineNumber = "1104"
+            endingLineNumber = "1104"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1322,11 +1306,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540529"
+            timestampString = "644817899.471011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1106"
-            endingLineNumber = "1106"
+            startingLineNumber = "1085"
+            endingLineNumber = "1085"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1338,11 +1322,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540593"
+            timestampString = "644817899.471082"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1054"
-            endingLineNumber = "1054"
+            startingLineNumber = "1079"
+            endingLineNumber = "1079"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1354,39 +1338,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5406719"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1046"
-            endingLineNumber = "1046"
-            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540764"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1036"
-            endingLineNumber = "1036"
-            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540871"
+            timestampString = "644817899.471154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1027"
@@ -1402,7 +1354,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.540978"
+            timestampString = "644817899.471226"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1019"
@@ -1418,11 +1370,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.541072"
+            timestampString = "644817899.471296"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1011"
-            endingLineNumber = "1011"
+            startingLineNumber = "1010"
+            endingLineNumber = "1010"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1434,11 +1386,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.541139"
+            timestampString = "644817899.471367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "999"
-            endingLineNumber = "999"
+            startingLineNumber = "1002"
+            endingLineNumber = "1002"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1450,11 +1402,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.541205"
+            timestampString = "644817899.471437"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "992"
-            endingLineNumber = "992"
+            startingLineNumber = "995"
+            endingLineNumber = "995"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1466,11 +1418,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.541267"
+            timestampString = "644817899.471508"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "955"
-            endingLineNumber = "955"
+            startingLineNumber = "988"
+            endingLineNumber = "988"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.471578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "977"
+            endingLineNumber = "977"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.471648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "971"
+            endingLineNumber = "971"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.471717"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "935"
+            endingLineNumber = "935"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1482,7 +1482,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.541333"
+            timestampString = "644817899.4717931"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "607"
@@ -1498,7 +1498,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.5415961"
+            timestampString = "644817899.472049"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "655"
@@ -1514,7 +1514,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.541667"
+            timestampString = "644817899.472121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "636"
@@ -1530,7 +1530,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.541732"
+            timestampString = "644817899.472187"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "600"
@@ -1546,7 +1546,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.541796"
+            timestampString = "644817899.472254"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "597"
@@ -1562,7 +1562,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.5418611"
+            timestampString = "644817899.472319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "696"
@@ -1578,7 +1578,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.541924"
+            timestampString = "644817899.472383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "698"
@@ -1594,7 +1594,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.5419869"
+            timestampString = "644817899.4724489"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "657"
@@ -1610,7 +1610,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542051"
+            timestampString = "644817899.4725159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "391"
@@ -1626,7 +1626,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.54212"
+            timestampString = "644817899.472592"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "414"
@@ -1642,11 +1642,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542188"
+            timestampString = "644817899.472663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2326"
-            endingLineNumber = "2326"
+            startingLineNumber = "2300"
+            endingLineNumber = "2300"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1658,11 +1658,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542251"
+            timestampString = "644817899.472733"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2850"
-            endingLineNumber = "2850"
+            startingLineNumber = "2824"
+            endingLineNumber = "2824"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1674,11 +1674,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542316"
+            timestampString = "644817899.472805"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2156"
-            endingLineNumber = "2156"
+            startingLineNumber = "2130"
+            endingLineNumber = "2130"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1690,11 +1690,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.54238"
+            timestampString = "644817899.472874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2196"
-            endingLineNumber = "2196"
+            startingLineNumber = "2170"
+            endingLineNumber = "2170"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1706,11 +1706,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542442"
+            timestampString = "644817899.472945"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2200"
-            endingLineNumber = "2200"
+            startingLineNumber = "2174"
+            endingLineNumber = "2174"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1722,11 +1722,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542504"
+            timestampString = "644817899.473014"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2205"
-            endingLineNumber = "2205"
+            startingLineNumber = "2179"
+            endingLineNumber = "2179"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1738,11 +1738,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5425659"
+            timestampString = "644817899.473083"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2150"
-            endingLineNumber = "2150"
+            startingLineNumber = "2124"
+            endingLineNumber = "2124"
             landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
             landmarkType = "7">
          </BreakpointContent>
@@ -1754,11 +1754,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542628"
+            timestampString = "644817899.473152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2725"
-            endingLineNumber = "2725"
+            startingLineNumber = "2699"
+            endingLineNumber = "2699"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1770,11 +1770,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.5426871"
+            timestampString = "644817899.47322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2439"
-            endingLineNumber = "2439"
+            startingLineNumber = "2413"
+            endingLineNumber = "2413"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1786,11 +1786,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542747"
+            timestampString = "644817899.473287"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2674"
-            endingLineNumber = "2674"
+            startingLineNumber = "2648"
+            endingLineNumber = "2648"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1802,11 +1802,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPlugin.cpp"
-            timestampString = "644777378.542806"
+            timestampString = "644817899.473353"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2821"
-            endingLineNumber = "2821"
+            startingLineNumber = "2795"
+            endingLineNumber = "2795"
             landmarkName = "JJLockPlugin::ParseGroupChildForLockConditionCheck(AIArtHandle groupArtHandle, string lockType)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1818,7 +1818,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.542865"
+            timestampString = "644817899.47342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1065"
@@ -1834,7 +1834,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLockPanel.cpp"
-            timestampString = "644777378.542955"
+            timestampString = "644817899.473479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1558"
@@ -1850,7 +1850,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.54304"
+            timestampString = "644817899.473539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1173"
@@ -1862,11 +1862,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.5436749"
+            timestampString = "644817899.474138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1122"
@@ -1882,7 +1882,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.543964"
+            timestampString = "644817899.474427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2592"
@@ -1898,7 +1898,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.544306"
+            timestampString = "644817899.474733"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2587"
@@ -1914,7 +1914,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.5445811"
+            timestampString = "644817899.475016"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2596"
@@ -1926,11 +1926,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.544844"
+            timestampString = "644817899.475405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "2597"
@@ -1946,7 +1946,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.545103"
+            timestampString = "644817899.475861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1177"
@@ -1962,7 +1962,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.545357"
+            timestampString = "644817899.476235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1143"
@@ -1978,7 +1978,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.545616"
+            timestampString = "644817899.476696"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1150"
@@ -1994,7 +1994,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.545956"
+            timestampString = "644817899.47711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1163"
@@ -2010,7 +2010,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.546291"
+            timestampString = "644817899.47746"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1171"
@@ -2022,11 +2022,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.546644"
+            timestampString = "644817899.477936"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1161"
@@ -2042,7 +2042,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.5469151"
+            timestampString = "644817899.4782391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1165"
@@ -2058,7 +2058,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.547176"
+            timestampString = "644817899.4785269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1182"
@@ -2074,7 +2074,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.547433"
+            timestampString = "644817899.478834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1191"
@@ -2090,7 +2090,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.547676"
+            timestampString = "644817899.479099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1199"
@@ -2106,7 +2106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.547914"
+            timestampString = "644817899.479364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1207"
@@ -2118,11 +2118,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.548148"
+            timestampString = "644817899.479627"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1226"
@@ -2134,11 +2134,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.548383"
+            timestampString = "644817899.479905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1246"
@@ -2150,11 +2150,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.548612"
+            timestampString = "644817899.4801641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1265"
@@ -2166,11 +2166,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.548835"
+            timestampString = "644817899.480449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1282"
@@ -2186,7 +2186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.549085"
+            timestampString = "644817899.480701"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1360"
@@ -2202,7 +2202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.549342"
+            timestampString = "644817899.480953"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1377"
@@ -2218,7 +2218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.54957"
+            timestampString = "644817899.481202"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1394"
@@ -2234,12 +2234,172 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Source/JJLock.cpp"
-            timestampString = "644777378.5497921"
+            timestampString = "644817899.481451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1411"
             endingLineNumber = "1411"
             landmarkName = "JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupArtHandle, bool remove)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.481704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2010"
+            endingLineNumber = "2010"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.481784"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2007"
+            endingLineNumber = "2007"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.4818439"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2008"
+            endingLineNumber = "2008"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.481903"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2029"
+            endingLineNumber = "2029"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLockPlugin.cpp"
+            timestampString = "644817899.481966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2030"
+            endingLineNumber = "2030"
+            landmarkName = "JJLockPlugin::Notify( AINotifierMessage * message )"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLock.cpp"
+            timestampString = "644817899.482026"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1054"
+            endingLineNumber = "1054"
+            landmarkName = "JJLock::ClearBoundAndLockEntry(ai::UnicodeString lockBoundID, ai::UnicodeString lockIconID, bool isLockCountApplicable)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLock.cpp"
+            timestampString = "644817899.48227"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1056"
+            endingLineNumber = "1056"
+            landmarkName = "JJLock::ClearBoundAndLockEntry(ai::UnicodeString lockBoundID, ai::UnicodeString lockIconID, bool isLockCountApplicable)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLock.cpp"
+            timestampString = "644817899.4825701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "JJLock::CreateLockBound(AIArtHandle artHandle, AILayerHandle lockLayer, AIArtHandle placedArtIconHandle, std::string newPlacedFilePathString)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLock.cpp"
+            timestampString = "644817899.482874"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1126"
+            endingLineNumber = "1126"
+            landmarkName = "JJLock::ClearDictEntries(AIArtHandle artHandle)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Source/JJLock.cpp"
+            timestampString = "644817899.483153"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1128"
+            endingLineNumber = "1128"
+            landmarkName = "JJLock::ClearDictEntries(AIArtHandle artHandle)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

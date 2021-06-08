@@ -460,7 +460,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                     
                     short shortType;
                     sAIArt->GetArtType(artHandle, &shortType);
-                    //qDebug() << "Title " << title.as_UTF8().c_str() << "  " << shortType;
                     
                     if(title != jjLock.GetUnicodeStringEntryFromHandleDict(artHandle, "layerName") && title != ai::UnicodeString("Isolation Mode"))
                     {
@@ -477,7 +476,7 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
     }
     else if(message->notifier == fAITextFontCommandPostNotifierStr)
     {
-        //qDebug()<<"";
+        
     }
     else if (message->notifier == fDocumentClosePreNotifier){
         
@@ -759,7 +758,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                                 aisdk::check_ai_error(result);
                         sAIUser->MessageAlert(ai::UnicodeString
                                               ("Child art object locked under this Group, not allowed to move(Child/Group) out of group boundary"));
-//                        return;
                         continue;
                     }
                 }
@@ -769,15 +767,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
             {
                 ai::UnicodeString artLockType;
                 result = jjLock.GetUnicodeEntryFromDocumentDict(artHandle, &artLockType, "groupChildLockType");
-                
-                
-//                qDebug() << "groupChildLockType "<< artLockType.as_UTF8().c_str() ;
-//                qDebug() << "Child locked " << jjLock.GetBooleanEntryFromHandleDict(artHandle, "groupChildLockBool");
-//                qDebug()<< " clock " <<jjLock.GetBooleanEntryFromHandleDict(artHandle, "clock");
-//                qDebug()<< " plock " <<jjLock.GetBooleanEntryFromHandleDict(artHandle, "plock");
-//                qDebug()<< " pclock " <<jjLock.GetBooleanEntryFromHandleDict(artHandle, "pclock");
-//                qDebug()<< " lock " <<jjLock.GetBooleanEntryFromHandleDict(artHandle, "lock");
-                
 
                 if(jjLock.GetBooleanEntryFromHandleDict(artHandle, "lock") && artLockType == ai::UnicodeString(""))
                 {
@@ -803,7 +792,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                             try {
                              result = sAIDocument->Undo();
                                 aisdk::check_ai_error(result);
-//                                break;
                                 continue;
                             }
                             catch (ai::Error &ex){
@@ -815,7 +803,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                         }
 
                         ParseGroupChildForLockConditionCheck(artHandle, "pclock");
-                   //     qDebug() << " groupTotalChildCount "<<totalGroupChildCount;
                     
                     }
                     else if(IsDictAndCurrentOwnRectBoundSame(artHandle) && jjLock.GetBooleanEntryFromHandleDict(artHandle, "clock"))
@@ -825,12 +812,10 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                             int countGroupChild = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                             objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                 //           qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                             if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
                                 aisdk::check_ai_error(result);
-//                                return;
                                 continue;
                             }
                             else
@@ -840,7 +825,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                                 objJJLockPanel->ContentLockClicked(artHandle);
                                 jjLock.ReCreatePathHandle(artHandle);
                                 sAILayer->SetCurrentLayer(currentLayer);
-//                                return;
                                 continue;
                             }
                         }
@@ -872,12 +856,10 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                             int countGroupChild = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                             objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                //            qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                             if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
                                 aisdk::check_ai_error(result);
-//                                return;
                                 continue;
                             }
                             else
@@ -887,7 +869,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                                 objJJLockPanel->ContentLockClicked(artHandle);
                                 jjLock.ReCreatePathHandle(artHandle);
                                 sAILayer->SetCurrentLayer(currentLayer);
-//                                return;
                                 continue;
                             }
                         }
@@ -897,7 +878,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                 {
                     if (ParseGroupChildForLockConditionCheck(artHandle, artLockType.as_UTF8().c_str()))
                     {
-//                        break;
                         continue;
                     }
                 }
@@ -956,7 +936,6 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                                 aisdk::check_ai_error(result);
                                     if(jjLock.GetBooleanEntryFromHandleDict(textFrameArtHandle, "pclock"))
                                     jjLock.SetArtHandleBoundInDict(textFrameArtHandle);
-//                                    break;
                                     continue;
                                 }
                                 catch (ai::Error &ex){
@@ -989,16 +968,14 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                                 {
                                     if(( (charFeatureStrokeArray.at(i).width != charStrokeStyle.at(i).width) || (charStrokeVisibleBool.at(i) != charStrokeBool.at(i))) )
                                     {
-                                     result = sAIDocument->Undo();
-                                aisdk::check_ai_error(result);
-//                                        break;
+                                        result = sAIDocument->Undo();
+                                        aisdk::check_ai_error(result);
                                         continue;
                                     }
                                     else if(charFeatureStrokeArray.at(i).color.kind != charStrokeStyle.at(i).color.kind && (charStrokeVisibleBool.at(i) != charStrokeBool.at(i)))
                                     {
-                                     result = sAIDocument->Undo();
-                                aisdk::check_ai_error(result);
-//                                        break;
+                                        result = sAIDocument->Undo();
+                                        aisdk::check_ai_error(result);
                                         continue;
                                     }
                                     else if(charFeatureStrokeArray.at(i).color.kind == kFourColor && charStrokeStyle.at(i).color.kind == kFourColor &&
@@ -1008,34 +985,30 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                                               (charFeatureStrokeArray.at(i).color.c.f.yellow != charStrokeStyle.at(i).color.c.f.yellow))
                                             )
                                     {
-                                     result = sAIDocument->Undo();
-                                aisdk::check_ai_error(result);
-//                                        break;
+                                        result = sAIDocument->Undo();
+                                        aisdk::check_ai_error(result);
                                         continue;
                                     }
                                     else if(charFeatureStrokeArray.at(i).color.kind == kGradient && charStrokeStyle.at(i).color.kind == kGradient &&
                                              (charFeatureStrokeArray.at(i).color.c.b.gradient != charStrokeStyle.at(i).color.c.b.gradient))
                                     {
-                                     result = sAIDocument->Undo();
-                                aisdk::check_ai_error(result);
-//                                        break;
+                                        result = sAIDocument->Undo();
+                                        aisdk::check_ai_error(result);
                                         continue;
                                     }
                                     else if(charFeatureStrokeArray.at(i).color.kind == kGrayColor && charStrokeStyle.at(i).color.kind == kGrayColor &&
                                              (charFeatureStrokeArray.at(i).color.c.g.gray != charStrokeStyle.at(i).color.c.g.gray))
                                     {
-                                     result = sAIDocument->Undo();
-                                aisdk::check_ai_error(result);
-//                                        break;
+                                        result = sAIDocument->Undo();
+                                        aisdk::check_ai_error(result);
                                         continue;
                                     }
                                     else if(charFeatureStrokeArray.at(i).color.kind == kCustomColor && charStrokeStyle.at(i).color.kind == kCustomColor &&
                                              (charFeatureStrokeArray.at(i).color.c.c.color != charStrokeStyle.at(i).color.c.c.color ||
                                               charFeatureStrokeArray.at(i).color.c.c.tint != charStrokeStyle.at(i).color.c.c.tint ))
                                     {
-                                     result = sAIDocument->Undo();
-                                aisdk::check_ai_error(result);
-//                                        break;
+                                        result = sAIDocument->Undo();
+                                        aisdk::check_ai_error(result);
                                         continue;
                                     }
                                     else if(charFeatureStrokeArray.at(i).color.kind == kThreeColor && charStrokeStyle.at(i).color.kind == kThreeColor &&
@@ -2012,9 +1985,10 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
             // Release the link when text art is converted to outlined
             else if(type == kGroupArt || type == kTextFrameArt)
             {
+                
+                AppContext appContext(gPlugin->GetPluginRef());
                 ai::int32 lockCount = 0;
                 int lockHandleCount = 0;
-                jjLock.GetIntegerEntryToDocumentDict("lockCount", &lockCount);
                 
                 AIArtSpec artSpec[7] = {{kTextFrameArt, 0, 0}, {kPlacedArt, 0, 0}, {kGroupArt, 0, 0}, {kPathArt, 0, 0}, {kPluginArt, 0, 0}, {kSymbolArt, 0, 0}, {kCompoundPathArt, 0, 0}};
                 ArtSetHelper artSetGroup(artSpec, 7);
@@ -2051,7 +2025,8 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                         
                     }
                 }
-                
+               
+                jjLock.GetIntegerEntryToDocumentDict("lockCount", &lockCount);
                 if((lockHandleCount != lockCount) && isBreakLoop == false)
                 {
                     result = sAIDocument->Undo();
@@ -2104,11 +2079,10 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                         
                         if(artType == kGroupArt && (jjLock.GetBooleanEntryFromHandleDict(artHandle, "pclock") || jjLock.GetBooleanEntryFromHandleDict(artHandle, "clock")) )
                         {
-                            jjLock.FetchAllDictionaryUsingIterator(artHandle);
+                        //    jjLock.FetchAllDictionaryUsingIterator(artHandle);
                             int countGroupChild = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                             objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                        //    qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                             if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
@@ -3640,10 +3614,10 @@ void PanelFlyoutMenuProc(AIPanelRef inPanel, ai::uint32 itemID)
             error = sAIPanelFlyoutMenu->SetItemMark(flyoutMenu, 1, kAIPanelFlyoutMenuItemMark_NONE);
             jjLockPanel.MoveLockIcon();
             break;
-        case 2:
-            error = sAIPanelFlyoutMenu->SetItemMark(flyoutMenu, 2, kAIPanelFlyoutMenuItemMark_NONE);
-            jjLockPanel.ReleaseLockClickedTest();
-            break;
+//        case 2:
+//            error = sAIPanelFlyoutMenu->SetItemMark(flyoutMenu, 2, kAIPanelFlyoutMenuItemMark_NONE);
+//            jjLockPanel.ReleaseLockClickedTest();
+//            break;
         default:
             break;
     }
@@ -3718,10 +3692,10 @@ ASErr JJLockPlugin::CreatePanel()
     }
     
     error = sAIPanelFlyoutMenu->AppendItem(fPanelFlyoutMenu, 1, ai::UnicodeString("Move Lock Icon"));
-    error = sAIPanelFlyoutMenu->AppendItem(fPanelFlyoutMenu, 2, ai::UnicodeString("For Test"));
+ //   error = sAIPanelFlyoutMenu->AppendItem(fPanelFlyoutMenu, 2, ai::UnicodeString("For Test"));
     
     error = sAIPanelFlyoutMenu->SetItemMark(fPanelFlyoutMenu, 1 , kAIPanelFlyoutMenuItemMark_NONE);
-    error = sAIPanelFlyoutMenu->SetItemMark(fPanelFlyoutMenu, 2 , kAIPanelFlyoutMenuItemMark_NONE);
+ //   error = sAIPanelFlyoutMenu->SetItemMark(fPanelFlyoutMenu, 2 , kAIPanelFlyoutMenuItemMark_NONE);
     
     
     error = sAIPanel->Create(fPluginRef, ai::UnicodeString("Locking"), ai::UnicodeString("Locking"), 2, minSize, isResizeable, fPanelFlyoutMenu, inUserData, fPanel);

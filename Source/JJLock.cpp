@@ -1246,7 +1246,7 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                     DeleteDictionaryForAnEntry(lastChildHandle, "GGroupID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
-                    ClearDictEntries(lastChildHandle);
+                    DeleteDictionaryUsingIteratorCheck(lastChildHandle, dictKeyStringList);
                 }
                 else
                 {
@@ -1264,7 +1264,7 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                     DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
-                    ClearDictEntries(lastChildHandle);
+                    DeleteDictionaryUsingIteratorCheck(lastChildHandle, dictKeyStringList);
                 }
                 else
                 {
@@ -1281,7 +1281,7 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                     DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
-                    ClearDictEntries(lastChildHandle);
+                    DeleteDictionaryUsingIteratorCheck(lastChildHandle, dictKeyStringList);
                 }
                 else
                 {
@@ -1360,7 +1360,7 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                     DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
-                    ClearDictEntries(lastChildHandle);
+                    DeleteDictionaryUsingIteratorCheck(lastChildHandle, dictKeyStringList);
                 }
                 else
                 {
@@ -1377,7 +1377,7 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                     DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
-                    ClearDictEntries(lastChildHandle);
+                    DeleteDictionaryUsingIteratorCheck(lastChildHandle, dictKeyStringList);
                 }
                 else
                 {
@@ -1394,7 +1394,7 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                     DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
-                    ClearDictEntries(lastChildHandle);
+                    DeleteDictionaryUsingIteratorCheck(lastChildHandle, dictKeyStringList);
                 }
                 else
                 {
@@ -1411,7 +1411,7 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                     DeleteDictionaryForAnEntry(lastChildHandle, "GParentID");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLocked");
                     DeleteDictionaryForAnEntry(lastChildHandle, "childLockCount");
-                    ClearDictEntries(lastChildHandle);
+                    DeleteDictionaryUsingIteratorCheck(lastChildHandle, dictKeyStringList);
                 }
                 else
                 {

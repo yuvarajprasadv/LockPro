@@ -14,11 +14,11 @@
 #define PLUGIN_NAME         "Lock Pro"
 #define PLUGIN_NAME_STRING  "Lock Pro"
 #define PLUGIN_VERSION      "3.2 QC"
-#define PlUGIN_BUILD_VERSION "1.0.0"
+#define PlUGIN_BUILD_VERSION "1.0.1"
 
-#define kBetaVersion false
-#define kAuthenticate false
-#define kTextExpireDate   1622851199   //  Friday, June 4, 2021 11:59:59 PM
+#define kBetaVersion true
+#define kAuthenticate true
+#define kTextExpireDate   1623542399   //  Saturday, June 12, 2021 11:59:59 PM
 
 // Company name
 #define COMPANY_NAME                            "SGK"
