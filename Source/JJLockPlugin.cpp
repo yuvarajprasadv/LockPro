@@ -809,10 +809,11 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                     {
                         if(jjLock.GetBooleanEntryFromHandleDict(artHandle, "lock") &&  type == kGroupArt)
                         {
-                            int countGroupChild = 0;
+                            int countGroupChild = 0, countWithID = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
-                            objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                            if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
+                            objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild, &countWithID);
+                         //   qDebug()<< "countWithID " <<countWithID;
+                            if((countGroupChild != totalGroupChildCount || countWithID != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
                                 aisdk::check_ai_error(result);
@@ -853,10 +854,11 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                         
                         if(type == kGroupArt && jjLock.GetBooleanEntryFromHandleDict(artHandle, "lock"))
                         {
-                            int countGroupChild = 0;
+                            int countGroupChild = 0, countWithID = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
-                            objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                            if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
+                            objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild, &countWithID);
+                        //    qDebug()<< "countWithID " <<countWithID;
+                            if((countGroupChild != totalGroupChildCount || countWithID != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
                                 aisdk::check_ai_error(result);
@@ -2009,13 +2011,14 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                     
                     if(type == kGroupArt && jjLock.GetBooleanEntryFromHandleDict(artHandle, "lock") && (jjLock.GetBooleanEntryFromHandleDict(artHandle, "pclock") || jjLock.GetBooleanEntryFromHandleDict(artHandle, "clock") ))
                     {
-                        int countGroupChild = 0;
+                        int countGroupChild = 0, countWithID = 0;
                         int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
                     //    int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
-                        objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
+                        objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild, &countWithID);
+                 //       qDebug()<< "countWithID " <<countWithID;
              //          qDebug() << countGroupChild <<"  " << totalGroupChildCount;
                       //  if(totalGroupChildCount == 0 && )
-                        if((countGroupChild != totalGroupChildCount) && totalGroupChildCount !=0)
+                        if((countGroupChild != totalGroupChildCount || countWithID != totalGroupChildCount) && totalGroupChildCount !=0)
                         {
                             result = sAIDocument->Undo();
                             aisdk::check_ai_error(result);
@@ -2080,10 +2083,11 @@ ASErr JJLockPlugin::Notify( AINotifierMessage * message )
                         if(artType == kGroupArt && (jjLock.GetBooleanEntryFromHandleDict(artHandle, "pclock") || jjLock.GetBooleanEntryFromHandleDict(artHandle, "clock")) )
                         {
                         //    jjLock.FetchAllDictionaryUsingIterator(artHandle);
-                            int countGroupChild = 0;
+                            int countGroupChild = 0, countWithID = 0;
                             int totalGroupChildCount = jjLock.GetIntegerEntryFromHandleDict(artHandle, "totalGroupChildCount");
-                            objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild);
-                            if((countGroupChild != totalGroupChildCount) && totalGroupChildCount != 0)
+                            objJJLockPanel->ParseGroupChildForCount(artHandle, &countGroupChild, &countWithID);
+                     //       qDebug()<< "countWithID " <<countWithID;
+                            if((countGroupChild != totalGroupChildCount || countWithID != totalGroupChildCount) && totalGroupChildCount != 0)
                             {
                                 result = sAIDocument->Undo();
                                 aisdk::check_ai_error(result);

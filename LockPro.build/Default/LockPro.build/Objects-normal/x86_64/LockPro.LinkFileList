@@ -1,20 +1,20 @@
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/ArtSetHelper.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IllustratorSDK.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/DocumentHelper.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SDKAboutPluginsHelper.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLock.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLockSuites.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IThrowException.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLockPlugin.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/AppContext.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Main.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Plugin.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Suites.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Tool.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IAIUnicodeString.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IText.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SDKPlugPlug.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IAIFilePath.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SelectionHelper.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SDKErrors.o
-/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2 WRK/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLockPanel.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/ArtSetHelper.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IllustratorSDK.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/DocumentHelper.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SDKAboutPluginsHelper.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLock.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLockSuites.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IThrowException.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLockPlugin.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/AppContext.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Main.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Plugin.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Suites.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/Tool.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IAIUnicodeString.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IText.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SDKPlugPlug.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/IAIFilePath.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SelectionHelper.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/SDKErrors.o
+/opt/Develop/Adobe Illustrator CC 2018 SDK/samplecode/JJLock 3.2/LockPro.build/Default/LockPro.build/Objects-normal/x86_64/JJLockPanel.o

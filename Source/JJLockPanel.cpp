@@ -896,7 +896,7 @@ void JJLockPanel::ParseGroupChildForCount(AIArtHandle groupArtHandle, int* count
     }
 }
 */
-void JJLockPanel::ParseGroupChildForCount(AIArtHandle groupArtHandle, int* countChild)
+void JJLockPanel::ParseGroupChildForCount(AIArtHandle groupArtHandle, int* countChild, int* withIdCount)
 {
     
     JJLock* jjLock;
@@ -909,7 +909,9 @@ void JJLockPanel::ParseGroupChildForCount(AIArtHandle groupArtHandle, int* count
         if(lastChildHandle != NULL)
         {
    //         qDebug() << "INT " << *countChild ;
-            *countChild += 1;
+          *countChild += 1;
+          if(jjLock->GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+             *withIdCount += 1;
           
         }
     }
@@ -925,11 +927,13 @@ void JJLockPanel::ParseGroupChildForCount(AIArtHandle groupArtHandle, int* count
         
         if(childArtType == kGroupArt)
         {
-            ParseGroupChildForCount(lastChildHandle, countChild);
+            ParseGroupChildForCount(lastChildHandle, countChild, withIdCount);
         }
         else if(childArtType == kCompoundPathArt)
         {
             *countChild += 1;
+            if(jjLock->GetUnicodeStringEntryFromHandleDict(lastChildHandle, "GParentID") != ai::UnicodeString(""))
+               *withIdCount += 1;
         }
         else if(childArtType == kTextFrameArt)
         {
@@ -952,11 +956,15 @@ void JJLockPanel::ParseGroupChildForCount(AIArtHandle groupArtHandle, int* count
             for(int i=linkArtHanldes.size() - 1; i >= 0; i--)
             {
                 *countChild += 1;
+                if(jjLock->GetUnicodeStringEntryFromHandleDict(lastChildHandle, "GParentID") != ai::UnicodeString(""))
+                   *withIdCount += 1;
             }
         }
         else if(childArtType == kPathArt)
         {
             *countChild += 1;
+            if(jjLock->GetUnicodeStringEntryFromHandleDict(lastChildHandle, "GParentID") != ai::UnicodeString(""))
+               *withIdCount += 1;
         }
         sAIArt->GetArtPriorSibling(lastChildHandle, &lastChildHandle);
     }
@@ -1792,6 +1800,9 @@ void JJLockPanel::ReleaseLockClicked(AIArtHandle releaseHandle)
 {
     
     AppContext appContext(gPlugin->GetPluginRef());
+    ai::int16 colorModel;
+    sAIDocument->GetDocumentColorModel(&colorModel);
+    qDebug() << colorModel;
     if(jjLock->IsDocumentOpened())
     {
         LoggerAPI();

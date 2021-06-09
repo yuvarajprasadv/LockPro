@@ -48,7 +48,7 @@ public:
     void ApplyFillAndStrokeColors(AIArtHandle artBoundHandle);
     void GetCharacterColor(std::vector<AIFillStyle>* charFeatureColorArray, std::vector<int>* charColorFillBool, AIArtHandle textFrameArt);
     void GetCharacterStroke(std::vector<AIStrokeStyle>* charFeatureStrokeArray, std::vector<int>* charStrokeFillBool, AIArtHandle textFrameArt);
-    void GetCharacterColor(std::vector<AIReal>* charFeatureColorArray, std::vector<int>* charColorFillBool, AIArtHandle textFrameArt);
+  //  void GetCharacterColor(std::vector<AIReal>* charFeatureColorArray, std::vector<int>* charColorFillBool, AIArtHandle textFrameArt);
     void CreateLockBound(AIArtHandle artHandle, AILayerHandle lockLayer, AIArtHandle placedArtIconHandle, std::string newPlacedFilePathString);
     void SetLayerTitleToHandle(AIArtHandle artHandle);
     void CreateOnlyIconAndLockBound(AIArtHandle artHandle, std::string newPlacedFilePathString);

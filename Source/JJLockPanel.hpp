@@ -57,7 +57,7 @@ public:
     void ParseCompoundPathForLock(AIArtHandle compoundPathArtHandle, string lockType);
     void ParseGroupChildForLock(AIArtHandle groupArtHandle, int* totalChildCount, string lockType);
     Boolean ParseGroupChildForLockCheck(AIArtHandle groupArtHandle);
-    void ParseGroupChildForCount(AIArtHandle groupArtHandle, int* countChild);
+    void ParseGroupChildForCount(AIArtHandle groupArtHandle, int* countChild, int* withIdCount);
     void CheckAndCreateParentIDForChild(AIArtHandle childHandle);
     void CheckAndReleaseParentIDForChild(AIArtHandle childHandle);
     

@@ -437,7 +437,7 @@ void JJLock::ApplyFillAndStrokeColors(AIArtHandle artBoundHandle)
     pathArtStyle.stroke.width = 0.2;
     result = sAIPathStyle->SetPathStyle(artBoundHandle, &pathArtStyle);
 }
-
+/*
 void JJLock::GetCharacterColor(std::vector<AIReal>* charFeatureColorArray, std::vector<int>* charColorFillBool, AIArtHandle textFrameArt)
 {
     
@@ -451,49 +451,86 @@ void JJLock::GetCharacterColor(std::vector<AIReal>* charFeatureColorArray, std::
     IStory story = textRange.GetStory();
     ICharFeatures charFeature;
     ITextRange duplicateRange = textRange.Clone();
-
+    ai::int16 colorModel;
+    sAIDocument->GetDocumentColorModel(&colorModel);
     if (textRange.GetSize() > 0)
     {
         for (int i = textRange.GetStart(); i < textRange.GetEnd(); i++)
         {
             AIFillStyle fillStyle;
             fillStyle.Init();
-            fillStyle.color.kind = kFourColor;
-            fillStyle.color.c.f.black = 0.0;
-            fillStyle.color.c.f.cyan = 0.0;
-            fillStyle.color.c.f.magenta = 0.0;
-            fillStyle.color.c.f.yellow = 0.0;
-            try
+            
+            if(colorModel == 2)
             {
-                duplicateRange.SetRange(i, i+1);
-                charFeature = duplicateRange.GetUniqueLocalCharFeatures();
-                paintRef = charFeature.GetFillColor(&fillColorBool);
-                if(paintRef.GetRef() != NULL && fillColorBool == true)
+                fillStyle.color.kind = kFourColor;
+                fillStyle.color.c.f.black = 0.0;
+                fillStyle.color.c.f.cyan = 0.0;
+                fillStyle.color.c.f.magenta = 0.0;
+                fillStyle.color.c.f.yellow = 0.0;
+                try
                 {
-                    sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
-                    
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.black);
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.cyan);
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.magenta);
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.yellow);
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    paintRef = charFeature.GetFillColor(&fillColorBool);
+                    if(paintRef.GetRef() != NULL && fillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
+                        
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.black);
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.cyan);
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.magenta);
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.yellow);
+                    }
+                    else
+                    {
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.black);
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.cyan);
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.magenta);
+                        charFeatureColorArray->push_back(fillStyle.color.c.f.yellow);
+                    }
+                    charColorFillBool->push_back(int(fillColorBool));
                 }
-                else
+                catch(Exception ex)
                 {
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.black);
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.cyan);
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.magenta);
-                    charFeatureColorArray->push_back(fillStyle.color.c.f.yellow);
+                    qDebug() << ex.what();
                 }
-                charColorFillBool->push_back(int(fillColorBool));
             }
-            catch(Exception ex)
+            else if(colorModel == 1)
             {
-                qDebug() << ex.what();
+                fillStyle.color.kind = kThreeColor;
+                fillStyle.color.c.rgb.red = 0.0;
+                fillStyle.color.c.rgb.green = 0.0;
+                fillStyle.color.c.rgb.blue = 0.0;
+                try
+                {
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    paintRef = charFeature.GetFillColor(&fillColorBool);
+                    if(paintRef.GetRef() != NULL && fillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
+                        
+                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.red);
+                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.green);
+                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.blue);
+                    }
+                    else
+                    {
+                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.red);
+                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.green);
+                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.blue);
+                    }
+                    charColorFillBool->push_back(int(fillColorBool));
+                }
+                catch(Exception ex)
+                {
+                    qDebug() << ex.what();
+                }
             }
         }
     }
 }
-
+*/
 void JJLock::GetCharacterStroke(std::vector<AIStrokeStyle>* charFeatureStrokeArray, std::vector<int>* charStrokeVisibleBool, AIArtHandle textFrameArt)
 {
     AIErr result = kNoErr;
@@ -507,43 +544,112 @@ void JJLock::GetCharacterStroke(std::vector<AIStrokeStyle>* charFeatureStrokeArr
     ICharFeatures charFeature;
     ICharInspector charInpector;
     ITextRange duplicateRange = textRange.Clone();
-    
+    ai::int16 colorModel;
+    sAIDocument->GetDocumentColorModel(&colorModel);
     if (textRange.GetSize() > 0)
     {
         for (int i = textRange.GetStart(); i < textRange.GetEnd(); i++)
         {
             AIStrokeStyle storkeStyle;
             storkeStyle.Init();
-            storkeStyle.color.kind = kFourColor;
-            storkeStyle.color.c.f.black = 1;
-            storkeStyle.color.c.f.cyan = 0;
-            storkeStyle.color.c.f.magenta = 0;
-            storkeStyle.color.c.f.yellow = 0;
-            storkeStyle.width = kAIRealZero;
-            try
+            
+            if(colorModel == 2)
             {
-                duplicateRange.SetRange(i, i+1);
-                charFeature = duplicateRange.GetUniqueLocalCharFeatures();
-                charInpector = duplicateRange.GetCharInspector();
-                IArrayReal relArray;
-                paintRef = charFeature.GetStrokeColor(&strokeFillColorBool);
-
-                if(paintRef.GetRef() != NULL && strokeFillColorBool == true)
+                storkeStyle.color.kind = kFourColor;
+                storkeStyle.color.c.f.black = 1;
+                storkeStyle.color.c.f.cyan = 0;
+                storkeStyle.color.c.f.magenta = 0;
+                storkeStyle.color.c.f.yellow = 0;
+                storkeStyle.width = kAIRealZero;
+                try
                 {
-                    sAIATEPaint->GetAIColor(paintRef.GetRef(), &storkeStyle.color);
-                    storkeStyle.width = charInpector.GetLineWidth().GetLast();
-                    charFeatureStrokeArray->push_back(storkeStyle);
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    charInpector = duplicateRange.GetCharInspector();
+                    IArrayReal relArray;
+                    paintRef = charFeature.GetStrokeColor(&strokeFillColorBool);
+                    
+                    if(paintRef.GetRef() != NULL && strokeFillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &storkeStyle.color);
+                        storkeStyle.width = charInpector.GetLineWidth().GetLast();
+                        charFeatureStrokeArray->push_back(storkeStyle);
+                    }
+                    else
+                    {
+                        storkeStyle.width = charInpector.GetLineWidth().GetLast();
+                        charFeatureStrokeArray->push_back(storkeStyle);
+                    }
+                    charStrokeVisibleBool->push_back(int(charInpector.GetStroke().GetLast())); // storing stroke visible for (0/1 issue)
                 }
-                else
+                catch(Exception ex)
                 {
-                    storkeStyle.width = charInpector.GetLineWidth().GetLast();
-                    charFeatureStrokeArray->push_back(storkeStyle);
+                    qDebug() << ex.what();
                 }
-                charStrokeVisibleBool->push_back(int(charInpector.GetStroke().GetLast())); // storing stroke visible for (0/1 issue)
             }
-            catch(Exception ex)
+            else if(colorModel == 1)
             {
-                qDebug() << ex.what();
+                storkeStyle.color.kind = kThreeColor;
+                storkeStyle.color.c.rgb.red = 1;
+                storkeStyle.color.c.rgb.green = 1;
+                storkeStyle.color.c.rgb.blue = 1;
+                storkeStyle.width = kAIRealZero;
+                try
+                {
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    charInpector = duplicateRange.GetCharInspector();
+                    IArrayReal relArray;
+                    paintRef = charFeature.GetStrokeColor(&strokeFillColorBool);
+
+                    if(paintRef.GetRef() != NULL && strokeFillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &storkeStyle.color);
+                        storkeStyle.width = charInpector.GetLineWidth().GetLast();
+                        charFeatureStrokeArray->push_back(storkeStyle);
+                    }
+                    else
+                    {
+                        storkeStyle.width = charInpector.GetLineWidth().GetLast();
+                        charFeatureStrokeArray->push_back(storkeStyle);
+                    }
+                    charStrokeVisibleBool->push_back(int(charInpector.GetStroke().GetLast())); // storing stroke visible for (0/1 issue)
+                }
+                catch(Exception ex)
+                {
+                    qDebug() << ex.what();
+                }
+            }
+            else if(colorModel == 0)
+            {
+                storkeStyle.color.kind = kGrayColor;
+                storkeStyle.color.c.g.gray = 1;
+                storkeStyle.width = kAIRealZero;
+                try
+                {
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    charInpector = duplicateRange.GetCharInspector();
+                    IArrayReal relArray;
+                    paintRef = charFeature.GetStrokeColor(&strokeFillColorBool);
+                    
+                    if(paintRef.GetRef() != NULL && strokeFillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &storkeStyle.color);
+                        storkeStyle.width = charInpector.GetLineWidth().GetLast();
+                        charFeatureStrokeArray->push_back(storkeStyle);
+                    }
+                    else
+                    {
+                        storkeStyle.width = charInpector.GetLineWidth().GetLast();
+                        charFeatureStrokeArray->push_back(storkeStyle);
+                    }
+                    charStrokeVisibleBool->push_back(int(charInpector.GetStroke().GetLast())); // storing stroke visible for (0/1 issue)
+                }
+                catch(Exception ex)
+                {
+                    qDebug() << ex.what();
+                }
             }
         }
     }
@@ -562,33 +668,87 @@ void JJLock::GetCharacterColor(std::vector<AIFillStyle>* charFeatureColorArray, 
     ICharFeatures charFeature;
     ITextRange duplicateRange = textRange.Clone();
 
+    ai::int16 colorModel;
+    sAIDocument->GetDocumentColorModel(&colorModel);
     if (textRange.GetSize() > 0)
     {
         for (int i = textRange.GetStart(); i < textRange.GetEnd(); i++)
         {
             AIFillStyle fillStyle;
-            fillStyle.color.kind = kFourColor;
-            fillStyle.color.c.f.black = 1;
-            fillStyle.color.c.f.cyan = 0;
-            fillStyle.color.c.f.magenta = 0;
-            fillStyle.color.c.f.yellow = 0;
-            try
+            fillStyle.Init();
+            if(colorModel == 2)
             {
-                duplicateRange.SetRange(i, i+1);
-                charFeature = duplicateRange.GetUniqueLocalCharFeatures();
-                paintRef = charFeature.GetFillColor(&fillColorBool);
-                if(paintRef.GetRef() != NULL && fillColorBool == true)
+                fillStyle.color.kind = kFourColor;
+                fillStyle.color.c.f.black = 1;
+                fillStyle.color.c.f.cyan = 0;
+                fillStyle.color.c.f.magenta = 0;
+                fillStyle.color.c.f.yellow = 0;
+                try
                 {
-                    sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
-                    charFeatureColorArray->push_back(fillStyle);
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    paintRef = charFeature.GetFillColor(&fillColorBool);
+                    if(paintRef.GetRef() != NULL && fillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
+                        charFeatureColorArray->push_back(fillStyle);
+                    }
+                    else
+                        charFeatureColorArray->push_back(fillStyle);
+                    charColorFillBool->push_back(int(fillColorBool));
                 }
-                else
-                    charFeatureColorArray->push_back(fillStyle);
-                charColorFillBool->push_back(int(fillColorBool));
+                catch(Exception ex)
+                {
+                    qDebug() << ex.what();
+                }
             }
-            catch(Exception ex)
+            else if(colorModel == 1)
             {
-                qDebug() << ex.what();
+                fillStyle.color.kind = kThreeColor;
+                fillStyle.color.c.rgb.red = 1;
+                fillStyle.color.c.rgb.green = 1;
+                fillStyle.color.c.rgb.blue = 1;
+                try
+                {
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    paintRef = charFeature.GetFillColor(&fillColorBool);
+                    if(paintRef.GetRef() != NULL && fillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
+                        charFeatureColorArray->push_back(fillStyle);
+                    }
+                    else
+                        charFeatureColorArray->push_back(fillStyle);
+                    charColorFillBool->push_back(int(fillColorBool));
+                }
+                catch(Exception ex)
+                {
+                    qDebug() << ex.what();
+                }
+            }
+            else if(colorModel == 0)
+            {
+                fillStyle.color.kind = kGrayColor;
+                fillStyle.color.c.g.gray = 1;
+                try
+                {
+                    duplicateRange.SetRange(i, i+1);
+                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
+                    paintRef = charFeature.GetFillColor(&fillColorBool);
+                    if(paintRef.GetRef() != NULL && fillColorBool == true)
+                    {
+                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
+                        charFeatureColorArray->push_back(fillStyle);
+                    }
+                    else
+                        charFeatureColorArray->push_back(fillStyle);
+                    charColorFillBool->push_back(int(fillColorBool));
+                }
+                catch(Exception ex)
+                {
+                    qDebug() << ex.what();
+                }
             }
         }
     }
