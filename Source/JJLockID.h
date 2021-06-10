@@ -14,7 +14,7 @@
 #define PLUGIN_NAME         "Lock Pro"
 #define PLUGIN_NAME_STRING  "Lock Pro"
 #define PLUGIN_VERSION      "3.2 QC"
-#define PlUGIN_BUILD_VERSION "1.0.2"
+#define PlUGIN_BUILD_VERSION "1.0.3"
 
 #define kBetaVersion true
 #define kAuthenticate true

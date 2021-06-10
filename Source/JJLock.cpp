@@ -168,7 +168,6 @@ void JJLock::CreateOnlyIconAndLockBound(AIArtHandle artHandle, std::string newPl
             for(int j=1; j<lockPosition; j++)
             {
                 horizontalOffset = (-((pathArtBound.right - pathArtBound.left)/(4)) - adjustmentOffset);
-                //   horizontalOffset = (-((pathArtBound.right - pathArtBound.left)/(4)) - adjustmentOffset);
                 sAIRealMath->AIRealMatrixSetTranslate(&matrix, horizontalOffset, 0);
                 result = sAITransformArt->TransformArt(lockIconArtHandle, &matrix, 0, kTransformObjects | kTransformChildren);
                 aisdk::check_ai_error(result);
@@ -317,12 +316,10 @@ void JJLock::CreateLockBound(AIArtHandle artHandle, AILayerHandle lockLayer, AIA
             AIReal verticalOffset = (lockArtBound.top - iconBound.top) + iconHeight - adjustmentOffset;
             lockPosition = GetIntegerEntryFromHandleDict(artHandle, "lockPos");
            
-          //  if(lockPosition == 1)
-            {
-                sAIRealMath->AIRealMatrixSetTranslate(&matrix, horizontalOffset, verticalOffset);
-                result = sAITransformArt->TransformArt(lockIconArtHandle, &matrix, 0, kTransformObjects | kTransformChildren);
-                aisdk::check_ai_error(result);
-            }
+            sAIRealMath->AIRealMatrixSetTranslate(&matrix, horizontalOffset, verticalOffset);
+            result = sAITransformArt->TransformArt(lockIconArtHandle, &matrix, 0, kTransformObjects | kTransformChildren);
+            aisdk::check_ai_error(result);
+            
             if(lockPosition > 1)
             {
                 for(int j=1; j<lockPosition; j++)
@@ -437,100 +434,7 @@ void JJLock::ApplyFillAndStrokeColors(AIArtHandle artBoundHandle)
     pathArtStyle.stroke.width = 0.2;
     result = sAIPathStyle->SetPathStyle(artBoundHandle, &pathArtStyle);
 }
-/*
-void JJLock::GetCharacterColor(std::vector<AIReal>* charFeatureColorArray, std::vector<int>* charColorFillBool, AIArtHandle textFrameArt)
-{
-    
-    AIErr result = kNoErr;
-    IApplicationPaint paintRef;
-    bool fillColorBool  = true;
-    TextRangeRef textRangeRef;
-    result = sAITextFrame->GetATETextRange(textFrameArt, &textRangeRef);
-    aisdk::check_ai_error(result);
-    ITextRange textRange(textRangeRef);
-    IStory story = textRange.GetStory();
-    ICharFeatures charFeature;
-    ITextRange duplicateRange = textRange.Clone();
-    ai::int16 colorModel;
-    sAIDocument->GetDocumentColorModel(&colorModel);
-    if (textRange.GetSize() > 0)
-    {
-        for (int i = textRange.GetStart(); i < textRange.GetEnd(); i++)
-        {
-            AIFillStyle fillStyle;
-            fillStyle.Init();
-            
-            if(colorModel == 2)
-            {
-                fillStyle.color.kind = kFourColor;
-                fillStyle.color.c.f.black = 0.0;
-                fillStyle.color.c.f.cyan = 0.0;
-                fillStyle.color.c.f.magenta = 0.0;
-                fillStyle.color.c.f.yellow = 0.0;
-                try
-                {
-                    duplicateRange.SetRange(i, i+1);
-                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
-                    paintRef = charFeature.GetFillColor(&fillColorBool);
-                    if(paintRef.GetRef() != NULL && fillColorBool == true)
-                    {
-                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
-                        
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.black);
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.cyan);
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.magenta);
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.yellow);
-                    }
-                    else
-                    {
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.black);
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.cyan);
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.magenta);
-                        charFeatureColorArray->push_back(fillStyle.color.c.f.yellow);
-                    }
-                    charColorFillBool->push_back(int(fillColorBool));
-                }
-                catch(Exception ex)
-                {
-                    qDebug() << ex.what();
-                }
-            }
-            else if(colorModel == 1)
-            {
-                fillStyle.color.kind = kThreeColor;
-                fillStyle.color.c.rgb.red = 0.0;
-                fillStyle.color.c.rgb.green = 0.0;
-                fillStyle.color.c.rgb.blue = 0.0;
-                try
-                {
-                    duplicateRange.SetRange(i, i+1);
-                    charFeature = duplicateRange.GetUniqueLocalCharFeatures();
-                    paintRef = charFeature.GetFillColor(&fillColorBool);
-                    if(paintRef.GetRef() != NULL && fillColorBool == true)
-                    {
-                        sAIATEPaint->GetAIColor(paintRef.GetRef(), &fillStyle.color);
-                        
-                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.red);
-                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.green);
-                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.blue);
-                    }
-                    else
-                    {
-                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.red);
-                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.green);
-                        charFeatureColorArray->push_back(fillStyle.color.c.rgb.blue);
-                    }
-                    charColorFillBool->push_back(int(fillColorBool));
-                }
-                catch(Exception ex)
-                {
-                    qDebug() << ex.what();
-                }
-            }
-        }
-    }
-}
-*/
+
 void JJLock::GetCharacterStroke(std::vector<AIStrokeStyle>* charFeatureStrokeArray, std::vector<int>* charStrokeVisibleBool, AIArtHandle textFrameArt)
 {
     AIErr result = kNoErr;
@@ -755,10 +659,8 @@ void JJLock::GetCharacterColor(std::vector<AIFillStyle>* charFeatureColorArray, 
 }
 
 
-void JJLock::GetCharacterFontProperty(std::vector<ai::UnicodeString>* charfontStyleNameArray, std::vector<ai::UnicodeString>* charfontFamilyNameArray,
-                                      std::vector<double>* charFontSizeArray, AIArtHandle textFrameArt)
+void JJLock::GetCharacterFontProperty(std::vector<ai::UnicodeString>* charfontStyleNameArray, std::vector<ai::UnicodeString>* charfontFamilyNameArray, std::vector<double>* charFontSizeArray, AIArtHandle textFrameArt)
 {
-    
     AIErr result = kNoErr;
     TextRangeRef textRangeRef;
     result = sAITextFrame->GetATETextRange(textFrameArt, &textRangeRef);
@@ -1311,7 +1213,8 @@ void JJLock::ParseGroupChildArtandClearLock(AIArtHandle groupArtHandle)
             {
                 if(GetBooleanEntryFromHandleDict(lastChildHandle, "lock") == true)
                 {
-                    ParseGroupChildForRemoveDictEntriesOrSetForPlock(lastChildHandle, true);
+                    int totalChildCount = 0;
+                    ParseGroupChildForRemoveDictEntriesOrSetForPlock(lastChildHandle, &totalChildCount, true);
                     if(GetUnicodeStringEntryFromHandleDict(lastChildHandle, "ParentID") != ai::UnicodeString(""))
                     {
                          jjLockPanel.CheckAndReleaseParentIDForChild(lastChildHandle);
@@ -1335,7 +1238,6 @@ void JJLock::ParseGroupChildArtandClearLock(AIArtHandle groupArtHandle)
                     jjLockPanel.CheckAndReleaseParentIDForChild(lastChildHandle);
                 }
                 ClearDictEntries(lastChildHandle);
-          //      sAIDocument->RedrawDocument();
             }
             else if(childArtType == kPathArt && GetBooleanEntryFromHandleDict(lastChildHandle, "lock") == true)
             {
@@ -1344,7 +1246,6 @@ void JJLock::ParseGroupChildArtandClearLock(AIArtHandle groupArtHandle)
                     jjLockPanel.CheckAndReleaseParentIDForChild(lastChildHandle);
                 }
                 ClearDictEntries(lastChildHandle);
-           //     sAIDocument->RedrawDocument();
             }
             else if(childArtType == kPluginArt && GetBooleanEntryFromHandleDict(lastChildHandle, "lock") == true)
             {
@@ -1375,20 +1276,49 @@ void JJLock::ParseGroupChildArtandClearLock(AIArtHandle groupArtHandle)
     }
 }
 
-void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupArtHandle, bool remove)
+void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupArtHandle, int* totalChildCount, bool remove)
 {
+    
+    ASErr result = kNoErr;
+    JJLockPanel objJJLockPanel;
     AIArtHandle lastChildHandle;
     short artType;
     sAIArt->GetArtType(groupArtHandle, &artType);
     if(artType == kGroupArt)
     {
-        DeleteDictionaryForAnEntry(groupArtHandle, "totalGroupChildCount");
-        DeleteDictionaryForAnEntry(groupArtHandle, "GGroupID");
-        DeleteDictionaryForAnEntry(groupArtHandle, "lockPos");
+        if(remove)
+        {
+            DeleteDictionaryForAnEntry(groupArtHandle, "totalGroupChildCount");
+            DeleteDictionaryForAnEntry(groupArtHandle, "GGroupID");
+            DeleteDictionaryForAnEntry(groupArtHandle, "GParentID");
+        }
         sAIArt->GetArtLastChild(groupArtHandle, &lastChildHandle);
+        
+        if(groupArtHandle != NULL && !remove)
+        {
+            *totalChildCount += 1;
+            AIArtHandle parentHandle;
+            ai::UnicodeString gLockGID;
+            sAIArt->GetArtParent(groupArtHandle, &parentHandle);
+            ASBoolean isLayerGroup;
+            sAIArt->IsArtLayerGroup(parentHandle, &isLayerGroup);
+            if(GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID") != ai::UnicodeString(""))
+            {
+                SetUnicodeStringEntryToHandleDict(groupArtHandle, "GParentID", GetUnicodeStringEntryFromHandleDict(parentHandle, "GGroupID"));
+                
+                gLockGID = objJJLockPanel.CreateUUID();
+                SetUnicodeStringEntryToHandleDict(groupArtHandle, "GGroupID", gLockGID);
+            }
+            else
+            {
+                gLockGID = objJJLockPanel.CreateUUID();
+                SetUnicodeStringEntryToHandleDict(groupArtHandle, "GGroupID", gLockGID);
+            }
+        }
     }
     else
         lastChildHandle = groupArtHandle;
+    
     while(lastChildHandle != NULL)
     {
         if(lastChildHandle != NULL)
@@ -1410,10 +1340,25 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 }
                 else
                 {
+                    AIRealRect artBounds = {0,0,0,0};
+                    sAIArt->GetArtTransformBounds(lastChildHandle, NULL, kNoStrokeBounds, &artBounds);
+                    AIReal top = artBounds.top;
+                    AIReal left = artBounds.left;
+                    AIReal right = artBounds.right;
+                    AIReal bottom = artBounds.bottom;
+                    result = SetRealEntryToDocumentDict(lastChildHandle, top, "JJLockArtBoundTop");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, left, "JJLockArtBoundLeft");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, right, "JJLockArtBoundRight");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, bottom, "JJLockArtBoundBottom");
+                    aisdk::check_ai_error(result);
+                    
                     SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                     SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString("plock"), "groupChildLockType");
                 }
-                ParseGroupChildForRemoveDictEntriesOrSetForPlock(lastChildHandle, remove);
+                ParseGroupChildForRemoveDictEntriesOrSetForPlock(lastChildHandle, totalChildCount, remove);
             }
             else if(childArtType == kCompoundPathArt)
             {
@@ -1428,6 +1373,27 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 }
                 else
                 {
+                    
+                    AIRealRect artBounds = {0,0,0,0};
+                    sAIArt->GetArtTransformBounds(lastChildHandle, NULL, kNoStrokeBounds, &artBounds);
+                    AIReal top = artBounds.top;
+                    AIReal left = artBounds.left;
+                    AIReal right = artBounds.right;
+                    AIReal bottom = artBounds.bottom;
+                    result = SetRealEntryToDocumentDict(lastChildHandle, top, "JJLockArtBoundTop");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, left, "JJLockArtBoundLeft");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, right, "JJLockArtBoundRight");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, bottom, "JJLockArtBoundBottom");
+                    aisdk::check_ai_error(result);
+                    
+                    *totalChildCount += 1;
+                    if(GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+                    {
+                        SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+                    }
                     SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                     SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString("plock"), "groupChildLockType");
                 }
@@ -1445,10 +1411,14 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 }
                 else
                 {
+                    *totalChildCount += 1;
+                    if(GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+                    {
+                        SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+                    }
                     SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                     SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString("plock"), "groupChildLockType");
                     
-                    ASErr result = kNoErr;
                     std::vector<AIArtHandle> linkArtHanldes;
                     AIBool8 linkedText;
                     sAITextFrame->PartOfLinkedText(lastChildHandle, &linkedText);
@@ -1524,6 +1494,27 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 }
                 else
                 {
+                    
+                    AIRealRect artBounds = {0,0,0,0};
+                    sAIArt->GetArtTransformBounds(lastChildHandle, NULL, kNoStrokeBounds, &artBounds);
+                    AIReal top = artBounds.top;
+                    AIReal left = artBounds.left;
+                    AIReal right = artBounds.right;
+                    AIReal bottom = artBounds.bottom;
+                    result = SetRealEntryToDocumentDict(lastChildHandle, top, "JJLockArtBoundTop");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, left, "JJLockArtBoundLeft");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, right, "JJLockArtBoundRight");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, bottom, "JJLockArtBoundBottom");
+                    aisdk::check_ai_error(result);
+                    
+                    *totalChildCount += 1;
+                    if(GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+                    {
+                        SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+                    }
                     SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                     SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString("plock"), "groupChildLockType");
                 }
@@ -1541,6 +1532,26 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 }
                 else
                 {
+                    AIRealRect artBounds = {0,0,0,0};
+                    sAIArt->GetArtTransformBounds(lastChildHandle, NULL, kNoStrokeBounds, &artBounds);
+                    AIReal top = artBounds.top;
+                    AIReal left = artBounds.left;
+                    AIReal right = artBounds.right;
+                    AIReal bottom = artBounds.bottom;
+                    result = SetRealEntryToDocumentDict(lastChildHandle, top, "JJLockArtBoundTop");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, left, "JJLockArtBoundLeft");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, right, "JJLockArtBoundRight");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, bottom, "JJLockArtBoundBottom");
+                    aisdk::check_ai_error(result);
+                    
+                    *totalChildCount += 1;
+                    if(GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+                    {
+                        SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+                    }
                     SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                     SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString("plock"), "groupChildLockType");
                 }
@@ -1558,6 +1569,26 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 }
                 else
                 {
+                    AIRealRect artBounds = {0,0,0,0};
+                    sAIArt->GetArtTransformBounds(lastChildHandle, NULL, kNoStrokeBounds, &artBounds);
+                    AIReal top = artBounds.top;
+                    AIReal left = artBounds.left;
+                    AIReal right = artBounds.right;
+                    AIReal bottom = artBounds.bottom;
+                    result = SetRealEntryToDocumentDict(lastChildHandle, top, "JJLockArtBoundTop");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, left, "JJLockArtBoundLeft");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, right, "JJLockArtBoundRight");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, bottom, "JJLockArtBoundBottom");
+                    aisdk::check_ai_error(result);
+                    
+                    *totalChildCount += 1;
+                    if(GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+                    {
+                        SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+                    }
                     SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                     SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString("plock"), "groupChildLockType");
                 }
@@ -1575,6 +1606,27 @@ void JJLock::ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupA
                 }
                 else
                 {
+                    
+                    AIRealRect artBounds = {0,0,0,0};
+                    sAIArt->GetArtTransformBounds(lastChildHandle, NULL, kNoStrokeBounds, &artBounds);
+                    AIReal top = artBounds.top;
+                    AIReal left = artBounds.left;
+                    AIReal right = artBounds.right;
+                    AIReal bottom = artBounds.bottom;
+                    result = SetRealEntryToDocumentDict(lastChildHandle, top, "JJLockArtBoundTop");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, left, "JJLockArtBoundLeft");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, right, "JJLockArtBoundRight");
+                    aisdk::check_ai_error(result);
+                    result = SetRealEntryToDocumentDict(lastChildHandle, bottom, "JJLockArtBoundBottom");
+                    aisdk::check_ai_error(result);
+                    
+                    *totalChildCount += 1;
+                    if(GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID") != ai::UnicodeString(""))
+                    {
+                        SetUnicodeStringEntryToHandleDict(lastChildHandle, "GParentID", GetUnicodeStringEntryFromHandleDict(groupArtHandle, "GGroupID"));
+                    }
                     SetBooleanEntryToHandleDict(lastChildHandle, "groupChildLockBool", true);
                     SetUnicodeEntryToDocumentDict(lastChildHandle, ai::UnicodeString("plock"), "groupChildLockType");
                 }
@@ -1600,7 +1652,8 @@ void JJLock::ClearLockEntry(AIArtHandle artHandle)
 
     if(groupType == kGroupArt && GetBooleanEntryFromHandleDict(artHandle, "lock"))
     {
-        ParseGroupChildForRemoveDictEntriesOrSetForPlock(artHandle, true);
+        int totalChildCount = 0;
+        ParseGroupChildForRemoveDictEntriesOrSetForPlock(artHandle, &totalChildCount, true);
     }
     if(GetUnicodeStringEntryFromHandleDict(artHandle, "ParentID") != ai::UnicodeString(""))
     {
@@ -2752,8 +2805,6 @@ AIErr JJLock::DeleteDictionaryUsingIteratorCheck(AIArtHandle artHandle, QStringL
                 DeleteDictionaryForAnEntry(artHandle, sAIDictionary->GetKeyString(dictKey));
             }
         }
-        JJLockPanel jjlockPanel;
-        jjlockPanel.ReleaseLockClickedTest();
         sAIDictionary->Release(artDict);
     }
     catch (ai::Error &ex)
@@ -2890,7 +2941,6 @@ void JJLock::GetTextFrameFillAndStrokeColour(std::vector<AIStrokeStyle>* textFra
     {
         AIArtHandle textFramePathHandle;
         AIPathStyle textFramePathStyle;
-        AIPathStyle textFramePathStyle2;
         sAITextFrame->GetPathObject(textFrameArt, &textFramePathHandle);
 
         AIBoolean fillVisible, strokeVisible;

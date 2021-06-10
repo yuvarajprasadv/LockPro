@@ -113,7 +113,7 @@ public:
     
     AIErr SetArrayEntryForCharFeature(AIArtHandle artHandle, std::string key, std::vector<ATE::ICharFeatures> unicodeStringArray);
     
-    void ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupArtHandle, bool remove);
+    void ParseGroupChildForRemoveDictEntriesOrSetForPlock(AIArtHandle groupArtHandle, int* totalChildCount, bool remove);
     void ClearDictEntries(AIArtHandle artHandle);
     void ParseGroupChildArtandClearLock(AIArtHandle groupArtHandle);
     
