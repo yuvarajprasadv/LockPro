@@ -44,7 +44,6 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
-         BundleIdentifier = "com.adobe.illustrator"
          FilePath = "/Applications/Adobe Illustrator CC 2018/Adobe Illustrator.app">
       </PathRunnable>
       <MacroExpansion>
